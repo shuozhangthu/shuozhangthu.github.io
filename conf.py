@@ -102,7 +102,7 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "zen-ipython"
+THEME = "zen-jinja"
 
 # Below this point, everything is optional
 
