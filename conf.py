@@ -17,16 +17,16 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "John T. Foster"  # (translatable)
-BLOG_TITLE = "from the shoulders of giants"  # (translatable)
+BLOG_AUTHOR = "Shuo Zhang"  # (translatable)
+BLOG_TITLE = "Thoughts, opinions, and projects"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://johntfoster.github.io/"
+SITE_URL = "http://shuozhangthu.github.io/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://johntfoster.github.com/blog"
-BLOG_EMAIL = "johntfosterjr@gmail.com"
-BLOG_DESCRIPTION = "mechanics and the mechanics of coding"  # (translatable)
+BLOG_EMAIL = "zhangshuo19871127@gmail.com"
+BLOG_DESCRIPTION = ""  # (translatable)
 GITHUB_DEPLOY_BRANCH = "master"
 GITHUB_SOURCE_BRANCH = "source"
 
@@ -102,7 +102,7 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "ut-zen-ipython"
+THEME = "zen-ipython"
 
 # Below this point, everything is optional
 
@@ -470,7 +470,7 @@ COMMENT_SYSTEM = "disqus"
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = "johntfoster"
+COMMENT_SYSTEM_ID = "shuozhangthu"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
