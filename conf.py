@@ -569,7 +569,7 @@ MathJax.Hub.Config({
 #       with the MarkdownExtension class and should not be added here.
 MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 
-PANDOC_OPTIONS = ['-F', 'pandoc-citeproc', '--bibliography=/Users/tangfei0520/SrRate.bib']
+PANDOC_OPTIONS = ['-F', 'pandoc-citeproc', '--bibliography=/Users/tangfei0520/blog.bib']
 
 
 # Extra options to pass to the pandoc comand.
