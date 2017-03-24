@@ -8,6 +8,7 @@
  .. type: text
  -->
 
+
 Methods
 -------
 At the category 1 sites where calcite dissolution rate and precipitation rate are almost equal ($R_p=R_d$), the recrystallization rate $R$  can be defined as $R=R_p=R_d$. In such cases, Ca concentration cannot be used to calculate the recrystallization rate since the Ca concentration is affected by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. In this study we use Sr concentration to infer the recrystallization which has been proved successful in Fantl and DePaolo (2007). 
@@ -73,15 +74,15 @@ The calculated diffusive-reaction length, sedimentation rate, calcite fraction, 
 
 
 
-![Sr concentrations with depth](files/Sr.png){#fig:SrDepth}
+![Sr concentrations with depth.](/files/Sr.png){#fig:SrDepth}
 
 
 
-![Calcite recrystallization rates and corresponding sedimentation rates.](files/RecrysRateVsSediRate.png){#fig:RecySedi}
+![Calcite recrystallization rates and corresponding sedimentation rates.](/files/RecrysRateVsSediRate.png){#fig:RecySedi}
 
 
 
-![Calcite recrystallization rates and corresponding calcite fractions in the solid.](files/RecrysRateVsCalcite.png){#fig:RecyCal}
+![Calcite recrystallization rates and corresponding calcite fractions in the solid.](/files/RecrysRateVsCalcite.png){#fig:RecyCal}
 
 
 Literature Cited
