@@ -1,7 +1,7 @@
 <!--
  .. title: What are the calcite recrystallization rates in deep sea sediments
  .. slug: calcite_recrystallization_rates_in_deep_sea_sediments
- .. date: 2017-03-24
+ .. date: 2017-03-24 21:44:25 UTC-05:00
  .. tags: Carbonate diagenesis, Ocean Drilling Projects
  .. link: 
  .. description: 
