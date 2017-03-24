@@ -1,6 +1,6 @@
 <!--
 .. title: What's the rates of calcite recrystallization in deep sea sediments?
-.. slug: Ocean Drilling Projects
+.. slug: Ocean-Drilling-Projects
 .. date: 2017-03-24 21:44:25 UTC-05:00
 .. tags: Ocean drilling projects, calcite recrystallization, pore fluid chemistry
 .. link: 
