@@ -102,7 +102,7 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "ut-zen-ipython"
+THEME = "zen-ipython"
 
 # Below this point, everything is optional
 
@@ -773,9 +773,9 @@ LOGGING_HANDLERS = {
 NAVIGATION_LINKS = {
         DEFAULT_LANG: (
             ('/index.html', 'Home', 'icon-home'),
-            ('http://johnfoster.pge.utexas.edu', 'About me', 'icon-user'),
-            ('https://github.com/johntfoster', 'My Github', 'icon-github'),
-            ('https://twitter.com/johntfoster', 'My Twitter', 'icon-twitter'),
+            ('http://shuozhangtsu.us', 'About me', 'icon-user'),
+            ('https://github.com/shuozhangthu', 'My Github', 'icon-github'),
+            ('https://twitter.com/zhangs06', 'My Twitter', 'icon-twitter'),
             ('/archive.html', 'Archives', 'icon-folder-open-alt'),
             ('/categories/index.html', 'Tags', 'icon-tags'),
             ('/rss.xml', 'RSS', 'icon-rss'),
