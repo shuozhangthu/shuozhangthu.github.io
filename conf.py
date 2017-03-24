@@ -567,9 +567,18 @@ MathJax.Hub.Config({
 # done in the code, hope you don't mind ;-)
 # Note: most Nikola-specific extensions are done via the Nikola plugin system,
 #       with the MarkdownExtension class and should not be added here.
-MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'tables']
+MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 
-PANDOC_OPTIONS = ['-F', 'pandoc-citeproc', '--bibliography=SrRate.bib']
+PANDOC_OPTIONS = ['-F', 'pandoc-crossref', '-F', 'pandoc-citeproc', '--bibliography=SrRate.bib']
+
+
+# Extra options to pass to the pandoc comand.
+# by default, it's empty, is a list of strings, for example
+# ['-F', 'pandoc-citeproc', '--bibliography=/Users/foo/references.bib']
+# Pandoc does not demote headers by default.  To enable this, you can use, for example
+# ['--base-header-level=2']
+# PANDOC_OPTIONS = []
+
 
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
