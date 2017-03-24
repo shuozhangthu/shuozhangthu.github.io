@@ -569,6 +569,8 @@ MathJax.Hub.Config({
 #       with the MarkdownExtension class and should not be added here.
 MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'tables']
 
+PANDOC_OPTIONS = ['-F', 'pandoc-crossref', '-F', 'pandoc-citeproc', '--bibliography=SrRate.bib']
+
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
 # (translatable)
