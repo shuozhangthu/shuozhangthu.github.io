@@ -21,10 +21,10 @@ BLOG_AUTHOR = "Shuo Zhang"  # (translatable)
 BLOG_TITLE = "Thoughts, opinions, and research projects"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://shuozhangthu.github.io/"
+SITE_URL = "http://shuozhangthu.us/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://johntfoster.github.com/blog"
+BASE_URL = "http://shuozhangthu.github.io/"
 BLOG_EMAIL = "zhangshuo19871127@gmail.com"
 BLOG_DESCRIPTION = "Thoughts, opinions, and research projects"  # (translatable)
 GITHUB_DEPLOY_BRANCH = "master"
