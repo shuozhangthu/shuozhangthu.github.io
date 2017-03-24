@@ -45,8 +45,6 @@ Site 1052 and 1053 do not have age data younger than 10 Myr. There seems to be n
 Results
 -------
 
-The calculated diffusive-reaction length, sedimentation rate, calcite fraction, and recrystallization rate for each site are listed in [Table @tbl:result]. The values of recrystallization rates are mostly between 0 to 0.3 per million years, with one exception in site 982 where the recrystallization is 0.86 /Myr. The fitting of Sr concentration for all sites are plotted in [Fig. @fig:SrDepth]. Recrystallization rates are cross plotted against sedimentation rates and calcite fractions for each site ([Fig. @fig:RecySedi], [Fig. @fig:RecyCal]).
-
 |      |       L (m) | Sedimentation rate (m/Myr) | Calcite fraction (%) | Recrystallization rate (/Myr) |
 | ---: | ----------: | -------------------------: | -------------------: | ----------------------------: |
 |  803 |     74.3314 |                    16.3279 |              89.1611 |                     0.0804005 |
