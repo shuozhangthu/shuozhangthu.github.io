@@ -68,13 +68,12 @@ Results
 | 1258 |     483.674 |                          0 |              49.2018 |                    0.00296178 |
 
 
-Table 1: Calcite recrystallization rates from Sr concentrations.
 
-![Figure 1. Sr concentrations with depth.](/files/Sr.png)
+![](/files/Sr.png)
 
-![Figure 2. Calcite recrystallization rates and sedimentation rates.](/files/RecrysRateVsSediRate.png)
+![](/files/RecrysRateVsSediRate.png)
 
-![Figure 3. Calcite recrystallization rates and calcite fractions.](/files/RecrysRateVsCalcite.png)
+![](/files/RecrysRateVsCalcite.png)
 
 Literature Cited
 ----------------
