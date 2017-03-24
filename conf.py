@@ -773,7 +773,7 @@ LOGGING_HANDLERS = {
 NAVIGATION_LINKS = {
         DEFAULT_LANG: (
             ('/index.html', 'Home', 'icon-home'),
-            ('http://shuozhangtsu.us', 'About me', 'icon-user'),
+            ('http://shuozhang.us', 'About me', 'icon-user'),
             ('https://github.com/shuozhangthu', 'My Github', 'icon-github'),
             ('https://twitter.com/zhangs06', 'My Twitter', 'icon-twitter'),
             ('/archive.html', 'Archives', 'icon-folder-open-alt'),
