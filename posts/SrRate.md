@@ -72,15 +72,9 @@ The calculated diffusive-reaction length, sedimentation rate, calcite fraction, 
 
 : Calcite recrystallization rates from Sr concentrations. {#tbl:result}
 
-
-
 ![Sr concentrations with depth.](/files/Sr.png){#fig:SrDepth}
 
-
-
 ![Calcite recrystallization rates and corresponding sedimentation rates.](/files/RecrysRateVsSediRate.png){#fig:RecySedi}
-
-
 
 ![Calcite recrystallization rates and corresponding calcite fractions in the solid.](/files/RecrysRateVsCalcite.png){#fig:RecyCal}
 
