@@ -15,18 +15,7 @@ article: http://ogp.me/ns/article#
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://shuozhangthu.github.io/index.html">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
- tex2jax: {
-     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-     displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- },
- displayAlign: 'left', // Change this to 'center' to center equations.
- "HTML-CSS": {
-     styles: {'.MathJax_Display': {"margin": 0}}
- }
-});
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>
     div.input_prompt {
       display: none;
     }
@@ -54,7 +43,7 @@ MathJax.Hub.Config({
 
 
                 </div>
-                        <div itemprop="keywords" class="tags">
+                    <div itemprop="keywords" class="tags">
         <ul>
         Tags : 
            <li><a class="tag p-category" href="categories/beamer.html" rel="tag">Beamer</a></li>
@@ -94,7 +83,7 @@ MathJax.Hub.Config({
 
 
                 </div>
-                
+            
             </div>
             <div class="body">
                 <div tabindex="-1" id="notebook" class="border-box-sizing">
@@ -395,7 +384,18 @@ rm /usr/local/trilinos/inc
 
    ga('create', 'UA-25324596-7', 'auto');
    ga('send', 'pageview');
-</script><script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="assets/js/jquery.timeago.js" type="text/javascript"></script><script src="assets/js/mathjax.js" type="text/javascript"></script><script type="text/javascript">
+</script><script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+ tex2jax: {
+     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+     displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ },
+ displayAlign: 'left', // Change this to 'center' to center equations.
+ "HTML-CSS": {
+     styles: {'.MathJax_Display': {"margin": 0}}
+ }
+});
+</script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });
