@@ -1,4 +1,4 @@
-Sitemap: http://johntfoster.github.io/sitemapindex.xml
+Sitemap: http://shuozhangthu.github.io/sitemapindex.xml
 
 User-Agent: *
-Host: johntfoster.github.io
+Host: shuozhangthu.github.io
