@@ -11,7 +11,7 @@
 
 Methods
 -------
-At the category 1 sites where calcite dissolution rate and precipitation rate are almost equal ($R_p=R_d$), the recrystallization rate $R$  can be defined as $R=R_p=R_d$. In such cases, Ca concentration cannot be used to calculate the recrystallization rate since the Ca concentration is affected by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. In this study we use Sr concentration to infer the recrystallization which has been proved successful in Fantl and DePaolo (2007). 
+In ocean drilling sites where calcite dissolution rate and precipitation rate are almost equal ($R_p=R_d$), the recrystallization rate $R$ can be defined as $R=R_p=R_d$. In such cases, Ca concentration cannot be used to calculate the recrystallization rates since the Ca concentration is affected only by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. We use Sr concentration to infer the recrystallization which has been proven successful in Fantl and DePaolo (2007). 
 
 The evolution of Sr concentration in the pore fluid ($C_f$) can be describe by the equation:
 $$
@@ -35,7 +35,7 @@ R=(\dfrac{1}{L^2}+\dfrac{V}{LD})\dfrac{D}{f_cMK}
 $$
 where $M=1.1,K=20,D=7500 m^2/Myr$.
 
-$f_c$ is calculated using the average calcite fraction in the top 200 meters of the sediments. $V$ is calculated using the average sedimentation rate for the sediments that are younger than 10 Myr. Compaction is not considered. Depth is fitted with age using a linear relationship.
+$f_c$ is calculated using the average calcite fraction in the top 200 meters of the sediments. $V$ is calculated using the average sedimentation rate for the sediments that are younger than 10 Myr. Compaction is not considered. Depth is fitted with age using a linear relationship to calculate the average sedimentation rate.
 
 Site 1052 and 1053 do not have age data younger than 10 Myr. There seems to be no deposition of sediments in the recent 30 Myr. Their sedimentation rates are thus assigned zeros. Age data for Site 1092, 1238 and 1258 are not available. The sedimentation rates for these sites are estimated as follows: Site 1238 is ~ 70m/Myr sed rate. Site 1258 has early Eocene sediments at the top (more or less) so sed rate ~ 0. Site 1092 has variable sed rate, but averages about 15m/Myr down to about 180m depth.
 
@@ -68,13 +68,13 @@ Results
 | 1258 |     483.674 |                          0 |              49.2018 |                    0.00296178 |
 
 
-: Calcite recrystallization rates from Sr concentrations. {#tbl:result}
+Table 1: Calcite recrystallization rates from Sr concentrations.
 
-![Sr concentrations with depth.](/files/Sr.png)
+![Figure 1. Sr concentrations with depth.](/files/Sr.png)
 
-![Calcite recrystallization rates and sedimentation rates.](/files/RecrysRateVsSediRate.png)
+![Figure 2. Calcite recrystallization rates and sedimentation rates.](/files/RecrysRateVsSediRate.png)
 
-![Calcite recrystallization rates and calcite fractions.](/files/RecrysRateVsCalcite.png)
+![Figure 3. Calcite recrystallization rates and calcite fractions.](/files/RecrysRateVsCalcite.png)
 
 Literature Cited
 ----------------
