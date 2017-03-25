@@ -141,3 +141,7 @@ Conclusions
 Systematic experiments are in need to validate the porosity-permeability relations proposed by @verma1988thermohydrological and @liu2013permeability. Such experiments should include measurement of porosity and permeability in well defined representative element volumes. Two mechanisms could cause severe reduction of core permeability, although this reduction should not be double accounted for by the porosity-permeability relation intended for the REVs as discussed above. One mechanism is the capillary driven back flow that transport brine to close to the injection surface. Pore space is thus filled with more salt at these locations. The other possible mechanism is a boundary effect at the injection surface. Since the brine at the injection surface is fully exposed to CO$_2$ gas, and initially the brine occupies all pore space at the injection surface, it is possible that this brine will all evaporate and leave the entire injection surface clogged. The core permeability will be zero with this one surface clogged.
 
 Field observation of salt precipitation in CO$_2$ sequestration projects have not been reported yet, but will be invaluable once available. Such observations can be used to confirm whether salt precipitation is severe at the injection surface, and whether capillary back flow is important at conditions encountered in field operations.
+
+Literature Cited
+----------------
+
