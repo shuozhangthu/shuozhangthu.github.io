@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Thoughts, opinions, and research projects (Posts about Carbonate diagenesis)</title><link>http://shuozhangthu.us/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://shuozhangthu.github.io/categories/carbonate-diagenesis.xml"></atom:link><language>en</language><lastBuildDate>Sat, 25 Mar 2017 15:59:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What are the calcite recrystallization rates in deep sea sediments</title><link>http://shuozhangthu.github.io/posts/SrRate.html</link><dc:creator>Shuo Zhang</dc:creator><description>&lt;!--
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thoughts, opinions, and research projects (Posts about Carbonate diagenesis)</title><link>http://shuozhangthu.us/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://shuozhangthu.github.io/categories/carbonate-diagenesis.xml"></atom:link><language>en</language><lastBuildDate>Sat, 25 Mar 2017 22:24:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What are the calcite recrystallization rates in deep sea sediments</title><link>http://shuozhangthu.github.io/posts/SrRate.html</link><dc:creator>Shuo Zhang</dc:creator><description>&lt;!--
  .. title: What are the calcite recrystallization rates in deep sea sediments
  .. slug: SrRate
- .. date: 2015-03-24 21:44:25 UTC-05:00
+ .. date: 2017-03-24 21:44:25 UTC-05:00
  .. tags: Carbonate diagenesis, Ocean Drilling Projects
  .. link: 
  .. description: 
@@ -194,4 +194,4 @@ $$&lt;/span&gt;&lt;br&gt; where &lt;span class="math inline"&gt;&lt;em&gt;M&lt;/
 &lt;div id="ref-fantle2007isotopes"&gt;
 &lt;p&gt;Fantle, Matthew S, and Donald J DePaolo. 2007. “Ca Isotopes in Carbonate Sediment and Pore Fluid from Odp Site 807a: The ca 2+(aq)–calcite Equilibrium Fractionation Factor and Calcite Recrystallization Rates in Pleistocene Sediments.” &lt;em&gt;Geochimica et Cosmochimica Acta&lt;/em&gt; 71 (10). Pergamon: 2524–46.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>Carbonate diagenesis</category><category>Ocean Drilling Projects</category><guid>http://shuozhangthu.github.io/posts/SrRate.html</guid><pubDate>Wed, 25 Mar 2015 02:44:25 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>Carbonate diagenesis</category><category>Ocean Drilling Projects</category><guid>http://shuozhangthu.github.io/posts/SrRate.html</guid><pubDate>Sat, 25 Mar 2017 02:44:25 GMT</pubDate></item></channel></rss>

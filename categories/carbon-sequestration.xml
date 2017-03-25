@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Thoughts, opinions, and research projects (Posts about carbon sequestration)</title><link>http://shuozhangthu.us/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://shuozhangthu.github.io/categories/carbon-sequestration.xml"></atom:link><language>en</language><lastBuildDate>Sat, 25 Mar 2017 20:20:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Will reservoirs be clogged by salt precipitation during CO2 dryout</title><link>http://shuozhangthu.github.io/posts/ZhangLiu.html</link><dc:creator>Shuo Zhang</dc:creator><description>&lt;!--
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thoughts, opinions, and research projects (Posts about carbon sequestration)</title><link>http://shuozhangthu.us/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://shuozhangthu.github.io/categories/carbon-sequestration.xml"></atom:link><language>en</language><lastBuildDate>Sat, 25 Mar 2017 22:24:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Will reservoirs be clogged by salt precipitation during CO2 dryout</title><link>http://shuozhangthu.github.io/posts/ZhangLiu.html</link><dc:creator>Shuo Zhang</dc:creator><description>&lt;!--
  .. title: Will reservoirs be clogged by salt precipitation during CO2 dryout
  .. slug: ZhangLiu
- .. date: 2015-03-25 21:44:25 UTC-05:00
+ .. date: 2017-03-25 13:44:25 UTC-05:00
  .. tags: carbon sequestration, dry out, reservoir clogging
  .. link: 
  .. description: 
@@ -156,4 +156,4 @@
 &lt;div id="ref-zeidouni2009analytical"&gt;
 &lt;p&gt;Zeidouni, Mehdi, Mehran Pooladi-Darvish, and David Keith. 2009. “Analytical Solution to Evaluate Salt Precipitation During Co 2 Injection in Saline Aquifers.” &lt;em&gt;International Journal of Greenhouse Gas Control&lt;/em&gt; 3 (5). Elsevier: 600–611.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>carbon sequestration</category><category>dry out</category><category>reservoir clogging</category><guid>http://shuozhangthu.github.io/posts/ZhangLiu.html</guid><pubDate>Thu, 26 Mar 2015 02:44:25 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>carbon sequestration</category><category>dry out</category><category>reservoir clogging</category><guid>http://shuozhangthu.github.io/posts/ZhangLiu.html</guid><pubDate>Sat, 25 Mar 2017 18:44:25 GMT</pubDate></item></channel></rss>
