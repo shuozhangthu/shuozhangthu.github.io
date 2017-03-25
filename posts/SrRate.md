@@ -11,7 +11,7 @@
 
 Methods
 -------
-In ocean drilling sites where calcite dissolution rate and precipitation rate are almost equal ($R_p=R_d$), the recrystallization rate $R$ can be defined as $R=R_p=R_d$. In such cases, Ca concentration cannot be used to calculate the recrystallization rates since the Ca concentration is affected only by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. We use Sr concentration to infer the recrystallization which has been proven successful in Fantl and DePaolo [fantle2007isotopes].
+In ocean drilling sites where calcite dissolution rate and precipitation rate are almost equal ($R_p=R_d$), the recrystallization rate $R$ can be defined as $R=R_p=R_d$. In such cases, Ca concentration cannot be used to calculate the recrystallization rates since the Ca concentration is affected only by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. We use Sr concentration to infer the recrystallization which has been proven successful in Fantl and DePaolo [-@fantle2007isotopes].
 
 The evolution of Sr concentration in the pore fluid ($C_f$) can be describe by the equation:
 $$
