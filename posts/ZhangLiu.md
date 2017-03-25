@@ -63,7 +63,9 @@ Before mineral reactions, the relative permeability of the wetting phase *$k_{r}
 
 $$k_r=S^{1/2} [\dfrac{\int_0^s (1/h(x))dx}{\int_0^1 (1/h(x))dx}]^2.$$
 
-Thus, we have $$k_{r}(S)=S^{1/2}[1-(1-S^{1/m})^m]^2.$$
+Thus, we have
+
+$$k_{r}(S)=S^{1/2}[1-(1-S^{1/m})^m]^2.$$
 
 The changes in pore geometry during salt precipitation is a complex process. Here a strict dependency of salt precipitation on solution concentrations is assumed, in other words, the amount of precipitated salt in a given pore is linearly dependent on its pore volume. Also the change in pore volume is assumed to be uniform within a given pore.
 
@@ -85,11 +87,29 @@ $$r_{p}=\alpha [S_p^{1/m}-1]^{-1/n}.$$
 
 The radius $r_{p}$ divides the pore spectrum into a dry, inert part and a wet reactive part, which has to compensate for the change in pore volume. For the calculation of the new PSD, only the pore radii of the wet pore space are multiplied by the proportionality factor $\delta$.
 
-The closed-form equation for permeability change due to mineral reactions is given in @liu2013permeability as follows:
+The cumulative PSD represents the relative volume of drainable pores with a radius equal to or smaller than $r$. The drainable pore-size density function is obtained by differentiation of the cumulative PSD with respect to $r$:
 
-$$\dfrac{K}{K_0}=\tau^{1/2}(\delta-1)(1-(1-S_p^1/m)^m)+1]^2,$$
+$$f(r)=\dfrac{d\theta(r)}{dr}.$$
 
-where $\tau$ is the tortuosity factor, and $\tau=1-S_p+\delta^2S_p$.
+We denote the new PSD function after salt precipitation as $f^*(r^*)$, the new water content as $\theta^*$, and the new radius as $r^*$. Recall that we define the volume ratio before and after reactions as $\beta$, and the radius ratio as $\delta$. Thus, we have $\theta^*=\theta\beta$, $r^*=r\delta$, and
+
+$$f^*(r^*)=\dfrac{d\theta^*(r^*)}{dr^*}=\dfrac{\beta}{\delta}f(\dfrac{r^*}{\delta}).$$
+
+Following @liu2013permeability, we have $$\dfrac{K}{K_0}=\tau^{1/2}[\dfrac{\int_0^{r_p^*}r^*f^*(r^*)dr^*+\int_{r_p}^\infty rf(r)df}{\int_0^\infty rf(r)dr}]^2,$$
+
+where $r_p$ is the threshold radius below which pores are occupied by water, and $r_p^*=r_p \delta$, which is the threshold radius post mineral reaction.
+
+Thus, we have
+
+$$\dfrac{K}{K_0}=\tau^{1/2}[\dfrac{\int_0^{r_p} \delta\beta rf(r)dr+\int_{r_p}^\infty rf(r)dr}{\int_0^\infty rf(r)dr}]^2.$$
+
+Using the mathematical relation [@van1980closed],
+
+$$f(S)=\dfrac{\int_0^r rf(r)dr}{\int_0^\infty rf(r)dr}=1-(1-S^{1/m})^m,$$
+
+we have 
+
+$$\dfrac{K}{K_0}=\tau^{1/2}[(\delta\beta-1)(1-(1-S^{1/m})^m)+1]^2.$$
 
 
 Compare with experimental measurements
@@ -116,7 +136,7 @@ continued growth of salt on these aggregates. The result of this mechanism was a
 
 
 Conclusions
-===========
+------------------------
 
 Systematic experiments are in need to validate the porosity-permeability relations proposed by @verma1988thermohydrological and @liu2013permeability. Such experiments should include measurement of porosity and permeability in well defined representative element volumes. Two mechanisms could cause severe reduction of core permeability, although this reduction should not be double accounted for by the porosity-permeability relation intended for the REVs as discussed above. One mechanism is the capillary driven back flow that transport brine to close to the injection surface. Pore space is thus filled with more salt at these locations. The other possible mechanism is a boundary effect at the injection surface. Since the brine at the injection surface is fully exposed to CO$_2$ gas, and initially the brine occupies all pore space at the injection surface, it is possible that this brine will all evaporate and leave the entire injection surface clogged. The core permeability will be zero with this one surface clogged.
 
