@@ -786,7 +786,7 @@ NAVIGATION_LINKS = {
             ('/index.html', 'Home', 'icon-home'),
             ('http://shuozhang.us', 'About me', 'icon-user'),
             ('https://github.com/shuozhangthu', 'My Github', 'icon-github'),
-            ('https://twitter.com/zhangs06', 'My Twitter', 'icon-twitter'),
+            ('https://twitter.com/zhangs06', 'My Twitter', 'icon-linkedin'),
             ('/archive.html', 'Archives', 'icon-folder-open-alt'),
             ('/categories/index.html', 'Tags', 'icon-tags'),
             ('/rss.xml', 'RSS', 'icon-rss'),
