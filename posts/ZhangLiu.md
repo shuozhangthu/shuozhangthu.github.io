@@ -2,7 +2,7 @@
  .. title: Will reservoirs be clogged by salt precipitation during CO2 dryout
  .. slug: ZhangLiu
  .. date: 2017-03-25 
- .. tags: carbon sequestration, dry out, reservoir clogging
+ .. tags: carbon sequestration, reservoir clogging, dry out
  .. link: 
  .. description: 
  .. type: text
