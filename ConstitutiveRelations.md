@@ -124,76 +124,36 @@ $$\label{eq:PcPcp}
 h(S)= \begin{cases} 
       \dfrac{h_0(S)}{\delta} & S\leq S_p \\
       h_0(S) & S>S_p 
-   \end{cases},$$ where $h_0$ is the initial capillary pressure head at
-saturation $S$. This means that capillary pressure is increased by a
-factor of $1/\delta$ for $S\leq S_p$ in the case of precipitation
-($\delta<1$), and unchanged for $S>S_p$. Note that the new $h$-$S$ curve
-is not continuous at $S=S_p$. This is because that mineral
-precipitation/dissolution only occurs in the water phase where
-$S\leq S_p$.
+   \end{cases},$$ where $h_0$ is the initial capillary pressure head at saturation $S$. This means that capillary pressure is increased by a factor of $1/\delta$ for $S\leq S_p$ in the case of precipitation ($\delta<1$), and unchanged for $S>S_p$. Note that the new $h$-$S$ curve is not continuous at $S=S_p$. This is because that mineral precipitation/dissolution only occurs in the water phase where $S\leq S_p$.
 
-In the case of dissolution ($\delta>1$), the sizes of the small pores
-initially occupied by water increase, and can potentially become larger
-than the previously large pores. Thus the pores need to be rearranged in
-terms of pore sizes to determine the new capillary pressure curve. If we
-follow the approach of the precipitation case, the new curve, which is a
-piecewise function, will have an offset at water saturation $S_p$ using
-Eq.\[eq:PcPcp\], as indicated by the red dashed line in
-Fig.\[fig:example\]. This means that some of the low saturations ($S_1$
-to $S_p$) correspond to lower capillary pressures compared to some of
-the high saturations ($S_p$ to $S_2$), which is physically not possible
-in the conceptual model of capillary tubes. In fact, some pores on the
-left side of $S_p$ ($S_1$ to $S_p$) have larger pore sizes than some
-other pores on the right side ($S_p$ to $S_2$), while water will always
-fill the small pores first. The pores whose sizes need to be rearranged
-in the new capillary curve lie between two threshold saturations, $S_1$
-and $S_2$, which correspond to capillary pressure heads $\delta h_p$ and
-$h_p/\delta$, where $h_p$ is the capillary pressure head for $S_p$ in
-the initial capillary pressure curve. Thus, $S_1$ and $S_2$ can be
-calculated as $$\label{eq:S1S2}
-\begin{cases} 
+In the case of dissolution ($\delta>1$), the sizes of the small pores initially occupied by water increase, and can potentially become larger than the previously large pores. Thus the pores need to be rearranged in terms of pore sizes to determine the new capillary pressure curve. If we follow the approach of the precipitation case, the new curve, which is a piecewise function, will have an offset at water saturation $S_p$ using Eq.\[eq:PcPcp\], as indicated by the red dashed line in Fig.\[fig:example\]. This means that some of the low saturations ($S_1$ to $S_p$) correspond to lower capillary pressures compared to some of the high saturations ($S_p$ to $S_2$), which is physically not possible in the conceptual model of capillary tubes. In fact, some pores on the left side of $S_p$ ($S_1$ to $S_p$) have larger pore sizes than some other pores on the right side ($S_p$ to $S_2$), while water will always fill the small pores first. The pores whose sizes need to be rearranged in the new capillary curve lie between two threshold saturations, $S_1$ and $S_2$, which correspond to capillary pressure heads $\delta h_p$ and $h_p/\delta$, where $h_p$ is the capillary pressure head for $S_p$ in the initial capillary pressure curve. Thus, $S_1$ and $S_2$ can be calculated as 
+
+$$\label{eq:S1S2} \begin{cases} 
+
       S_1=[1+(\alpha h_p\delta)^n]^{-m} \\
       S_2=[1+(\alpha h_p/\delta)^n]^{-m} 
    \end{cases}$$, where $h_p=h_0(S_p)$.
 
-For $S<S_1$ and $S>S_2$, the new capillary pressure curve follows
-Eq.\[eq:PcPcp\]. However, for $S_1\leq S\leq S_2$, the capillary
-pressure curve needs to be adjusted. For a given capillary pressure head
-$h$ ($h_p/\delta\leq h\leq h_p$), the water volume from $h_p$ to $h$
-comes from two sources, the inert pores that have smaller pore radii
-than those corresponding to $h$ ($\hat{S}_2$ to $S_p$), and the reactive
-pores whose sizes are enlarged but are still smaller compared to that
-corresponding to $h$ ($\hat{S}_1$ to $S_1$). Thus,
+For $S<S_1$ and $S>S_2$, the new capillary pressure curve follows Eq.\[eq:PcPcp\]. However, for $S_1\leq S\leq S_2$, the capillary pressure curve needs to be adjusted. For a given capillary pressure head $h$ ($h_p/\delta\leq h\leq h_p$), the water volume from $h_p$ to $h$ comes from two sources, the inert pores that have smaller pore radii than those corresponding to $h$ ($\hat{S}_2$ to $S_p$), and the reactive pores whose sizes are enlarged but are still smaller compared to that corresponding to $h$ ($\hat{S}_1$ to $S_1$). Thus,
 
-$$\label{eq:S-S1}
-S-S_1=(\hat{S}_1-S_1)+(\hat{S}_2-S_p),$$
+$$S-S_1=(\hat{S}_1-S_1)+(\hat{S}_2-S_p),$$
 
-where $\hat{S}_1=[1+(\alpha h\delta)^n]^{-m}$ and
-$\hat{S}_2=[1+(\alpha h)^n]^{-m}$. Thus, the equation for the capillary
-pressure head after mineral dissolution is $$\label{eq:PcDss}
+where $\hat{S}_1=[1+(\alpha h\delta)^n]^{-m}$ and $\hat{S}_2=[1+(\alpha h)^n]^{-m}$. Thus, the equation for the capillary pressure head after mineral dissolution is $$\label{eq:PcDss}
 S= \begin{cases} 
       [1+(\alpha h\delta)^n]^{-m} &h > h_p\\
       [1+(\alpha h\delta)^n]^{-m}+[1+(\alpha h)^n]^{-m}-S_p &h_p /\delta< h \leq h_p \\
       [1+(\alpha h)^n]^{-m} & h \leq h_p / \delta
    \end{cases}.$$
 
-The values calculated from this final equation is plotted in
-Fig.\[fig:example\] as blue dashed line, where capillary pressure is a
-monotone function of water saturation. Note that here water saturation
-is written as a function of capillary pressure head, but capillary
-pressure head is not an explicit function of water saturation. This
-prevents us from obtaining closed-form equations for relative
-permeabilities for the dissolution case, which will be discuss later.
+The values calculated from this final equation is plotted in Fig.\[fig:example\] as blue dashed line, where capillary pressure is a monotone function of water saturation. Note that here water saturation is written as a function of capillary pressure head, but capillary pressure head is not an explicit function of water saturation. This prevents us from obtaining closed-form equations for relative permeabilities for the dissolution case, which will be discuss later.
 
 
 Permeability
 ------------
 
-The closed-form equation for permeability change due to mineral
-reactions is given in [@liu2013permeability] as follows:
+The closed-form equation for permeability change due to mineral reactions is given in [@liu2013permeability] as follows:
 
-$$\label{eq:liu}
-\dfrac{K}{K_0}=\tau^{1/2}[(\delta-1)(1-(1-\bar{S}_p^{1/m})^m)+1]^2,$$
+$$\dfrac{K}{K_0}=\tau^{1/2}[(\delta-1)(1-(1-\bar{S}_p^{1/m})^m)+1]^2,$$
 
 where $\tau$ is the tortuosity factor, and
 $\tau=1-\bar{S}_p+\delta^2\bar{S}_p$. [@liu2013permeability] define this
@@ -211,22 +171,15 @@ reactions,
 
 $$f(r)=\dfrac{d\theta(r)}{dr}.$$
 
-We denote the new PSD function as $f^*(r^*)$, the new water content as
-$\theta^*$, and the new radius as $r^*$. Recall that we defined the
-volume ratio before and after reactions as $\beta$, and the radius ratio
-as $\delta$. Thus, we have $\theta^*=\theta\beta$, $r^*=r\delta$. For
-$r<r_{p}$, the new PSD function is
+We denote the new PSD function as $f^*(r^*)$, the new water content as $\theta^*$, and the new radius as $r^*$. Recall that we defined the volume ratio before and after reactions as $\beta$, and the radius ratio as $\delta$. Thus, we have $\theta^*=\theta\beta$, $r^*=r\delta$. For $r<r_{p}$, the new PSD function is
 
-$$\label{eq:fstar}
-f^*(r^*)=\dfrac{d\theta^*(r^*)}{dr^*}=\dfrac{\beta}{\delta}f(\dfrac{r^*}{\delta}).$$
+$$f^*(r^*)=\dfrac{d\theta^*(r^*)}{dr^*}=\dfrac{\beta}{\delta}f(\dfrac{r^*}{\delta}).$$
 
-Following [@liu2013permeability], only the water occupied pores are
-modified, $$\label{eq:Kfstar}
-\dfrac{K}{K_0}=\tau^{1/2}[\dfrac{\int_0^{r_p^*}r^*f^*(r^*)dr^*+\int_{r_p}^\infty rf(r)dr}{\int_0^\infty rf(r)dr}]^2,$$
+Following [@liu2013permeability], only the water occupied pores are modified, 
 
-where $r_p$ is the threshold radius below which pores are occupied by
-water, and $r_p^*=r_p \delta$, which is the threshold radius post
-mineral reaction.
+$$\dfrac{K}{K_0}=\tau^{1/2}[\dfrac{\int_0^{r_p^*}r^*f^*(r^*)dr^*+\int_{r_p}^\infty rf(r)dr}{\int_0^\infty rf(r)dr}]^2,$$
+
+where $r_p$ is the threshold radius below which pores are occupied by water, and $r_p^*=r_p \delta$, which is the threshold radius post mineral reaction.
 
 Substituting Eq.\[eq:fstar\] into Eq.\[eq:Kfstar\], we have
 
@@ -235,26 +188,15 @@ $$\dfrac{K}{K_0}=\tau^{1/2}[\dfrac{\int_0^{r_p} \delta\beta rf(r)dr+\int_{r_p}^\
 Using the mathematical relation [@van1980closed],
 $$F(\bar{S})=\dfrac{\int_0^r rf(r)dr}{\int_0^\infty rf(r)dr}=1-(1-\bar{S}^{1/m})^m,$$
 
-we obtain $$\label{eq:Kfinal}
-\dfrac{K}{K_0}=\tau^{1/2}[(\delta\beta-1)(1-(1-\bar{S}_p^{1/m})^m)+1]^2.$$
+we obtain $$\dfrac{K}{K_0}=\tau^{1/2}[(\delta\beta-1)(1-(1-\bar{S}_p^{1/m})^m)+1]^2.$$
 
-Comparing Eq.\[eq:Kfinal\] with Eq.\[eq:liu\], the only difference is
-that [@liu2013permeability] misses a $\beta$ term.
+Comparing Eq.\[eq:Kfinal\] with Eq.\[eq:liu\], the only difference is that [@liu2013permeability] misses a $\beta$ term.
 
 
 Relative Permeability of Water
 ------------------------------
 
-Relative permeabilities are defined as the permeability of one phase
-divided by the saturated permeability, in our case, the saturated
-permeability of modified porous medium ($K$). However, for simplicity,
-we derive our new relative permeabilities as divided by the saturated
-permeability of the original porous medium ($K_0$). These relations can
-be corrected simply by using the factor $K/K_0$ as expressed in
-Eq.\[eq:Kfinal\]. Let us denote the initial water permeability as
-$K_{w0}$, relative permeability as $k_{w0}$, and the new water
-permeability as $K_w$, relative permeability as $k_w$. Following
-[@mualem1976new], we obtain
+Relative permeabilities are defined as the permeability of one phase divided by the saturated permeability, in our case, the saturated permeability of modified porous medium ($K$). However, for simplicity, we derive our new relative permeabilities as divided by the saturated permeability of the original porous medium ($K_0$). These relations can be corrected simply by using the factor $K/K_0$ as expressed in Eq.\[eq:Kfinal\]. Let us denote the initial water permeability as $K_{w0}$, relative permeability as $k_{w0}$, and the new water permeability as $K_w$, relative permeability as $k_w$. Following [@mualem1976new], we obtain
 
 $$k_{w0}=\dfrac{K_{w0}}{K_0}=\tau^{1/2}[\dfrac{\int_0^r rf(r)dr}{\int_0^{\infty} rf(r)dr}]^2=\tau^{1/2}[F(\bar{S})]^2,$$
 
@@ -277,8 +219,7 @@ where $\tau=\delta^2 \bar{S}_p + \bar{S}- \bar{S}_p$.
 Thus,
 $$\dfrac{k_w}{k_{w0}}=(\dfrac{\bar{S}-\bar{S}_p+\delta^2 \bar{S}_p}{\bar{S}})^{1/2}[\dfrac{F(\bar{S})+(\delta\beta-1)F(\bar{S}_p)}{F(\bar{S})}]^2.$$
 
-To summarize, the new relation between relative permeability of the
-wetting phase and precipitation is: $$\label{eq:KrwPcp}
+To summarize, the new relation between relative permeability of the wetting phase and precipitation is: $$\label{eq:KrwPcp}
 \dfrac{k_w}{k_{w0}}= \begin{cases}
 \delta^3\beta^2 &S\leq S_p \\
 (\dfrac{\bar{S}-\bar{S}_p+\delta^2 \bar{S}_p}{\bar{S}})^{1/2}[\dfrac{F(\bar{S})+(\delta\beta-1)F(\bar{S}_p)}{F(\bar{S})}]^2 & S>S_p
@@ -288,14 +229,7 @@ wetting phase and precipitation is: $$\label{eq:KrwPcp}
 Relative Permeability of Non-Wetting Phase
 ------------------------------------------
 
-[@van1980closed] did not give the explicit formulation for the relative
-permeability of non-wetting phase as a function of effective water
-saturation, but it is straightforward to derive this given the
-discussions above. Again, we denote the initial permeability of the
-non-wetting phase as $K_{g0}$, relative permeability as $k_{g0}$, and
-the new permeability of the non-wetting phase as $K_g$, relative
-permeability as $k_g$. The integration for the relative permeability of
-non-wetting phase is from $r$ to $\infty$:
+[@van1980closed] did not give the explicit formulation for the relative permeability of non-wetting phase as a function of effective water saturation, but it is straightforward to derive this given the discussions above. Again, we denote the initial permeability of the non-wetting phase as $K_{g0}$, relative permeability as $k_{g0}$, and the new permeability of the non-wetting phase as $K_g$, relative permeability as $k_g$. The integration for the relative permeability of non-wetting phase is from $r$ to $\infty$:
 
 $$k_{g0}=\dfrac{K_{g0}}{K_0}=\tau^{1/2}[\dfrac{\int_r^\infty rf(r)dr}{\int_0^\infty rf(r)dr}]^2=\tau^{1/2}[1-F(\bar{S})]^2,$$
 
@@ -314,253 +248,64 @@ where $\tau=1-\bar{S}$.
 
 Thus, $$\dfrac{k_g}{k_{g0}}=1.$$
 
-To summarize, the new relation between relative permeability of the
-non-wetting phase and precipitation is: $$\label{eq:KrgPcp}
+To summarize, the new relation between relative permeability of the non-wetting phase and precipitation is: $$\label{eq:KrgPcp}
 \dfrac{k_g}{k_{g0}}= \begin{cases}
 [\dfrac{(\bar{S}_p-\bar{S})\delta^2+(1-\bar{S}_p)}{1-\bar{S}}]^{1/2}[\dfrac{1-\delta\beta F(\bar{S})+(\delta\beta -1)F(\bar{S}_p)}{1-F(\bar{S})}]^2 &S\leq S_p \\
 1 & S>S_p
 \end{cases}.$$
 
 
-Verification with Pore Network Modeling {#S:4}
-=======================================
+Verification with Pore Network Modeling
+---------------------------------------
 
-In order to test the new equations for calculating changes of capillary
-pressure and relative permeabilities due to mineral precipitation and
-dissolution, we use pore network modeling (PNM) to compute these
-functions in a two-phase flow system. The model comprises a constrained
-set of parameters that mimic the pore structure of a porous medium.
+In order to test the new equations for calculating changes of capillary pressure and relative permeabilities due to mineral precipitation and dissolution, we use pore network modeling (PNM) to compute these functions in a two-phase flow system. The model comprises a constrained set of parameters that mimic the pore structure of a porous medium.
 
-PNM is commonly used to predict capillary pressure and relative
-permeability functions for multi-phase flow simulations, and uses
-idealized geometric representations of complex pore structures and
-principles of percolation/invasion theory
-[@blunt2001flow; @blunt2013pore]. It is a well-established approach for
-calculating the small-scale petrophysical functions of two- and
-three-phase flow through porous media. Here we use the pore-network
-model of [@ryazanov2009two]. This model can be applied to complex
-unstructured pore-networks, considers film and layer-flow using
-thermodynamic criteria, uses a variety of shapes to represent the shapes
-of the pore throats, and has been extensively validated using
-experimental data.
+PNM is commonly used to predict capillary pressure and relative permeability functions for multi-phase flow simulations, and uses idealized geometric representations of complex pore structures and principles of percolation/invasion theory [@blunt2001flow; @blunt2013pore]. It is a well-established approach for calculating the small-scale petrophysical functions of two- and three-phase flow through porous media. Here we use the pore-network model of [@ryazanov2009two]. This model can be applied to complex unstructured pore-networks, considers film and layer-flow using thermodynamic criteria, uses a variety of shapes to represent the shapes of the pore throats, and has been extensively validated using experimental data.
 
 
 Initial Pore Network Model
 --------------------------
 
-We use a realistic 3D pore-network extracted from pore-space
-reconstruction methods and CT images that are geometrically and
-topologically equivalent to the pore structures of a Berea sandstone
-sample (Fig.\[fig:PNM\]). The network consists of 12349 pores bodies
-(nodes) and 26146 pore throats (bonds). Each pore is assigned a regular
-shape (triangle, star, or circle) based on the shape factor which best
-matches that of the real pore shape. The average coordination number of
-this pore network is 4.19, initial permeability is 1639.47 mD, and
-porosity is 0.24. In this numerical experiment, we start with a fully
-water-saturated network ($S=1.0$). Then, the non-wetting phase is
-injected into the network for primary drainage. The pore network model
-calculates the capillary pressure curve and relative permeability curves
-as a function of water saturation through flooding. All floods are
-assumed to be capillary dominated and are simulated according to
-invasion-percolation principles.
+We use a realistic 3D pore-network extracted from pore-space reconstruction methods and CT images that are geometrically and topologically equivalent to the pore structures of a Berea sandstone sample (Fig.\[fig:PNM\]). The network consists of 12349 pores bodies (nodes) and 26146 pore throats (bonds). Each pore is assigned a regular shape (triangle, star, or circle) based on the shape factor which best matches that of the real pore shape. The average coordination number of this pore network is 4.19, initial permeability is 1639.47 mD, and porosity is 0.24. In this numerical experiment, we start with a fully water-saturated network ($S=1.0$). Then, the non-wetting phase is injected into the network for primary drainage. The pore network model calculates the capillary pressure curve and relative permeability curves as a function of water saturation through flooding. All floods are assumed to be capillary dominated and are simulated according to invasion-percolation principles.
 
-The initial capillary pressure curve and relative permeability curves
-are shown in Fig.\[fig:vanPc\] and Fig.\[fig:vanKr\] for this pore
-network. They are calculated by running primary drainage of non-wetting
-phase through an initially water-saturated sample. As can be determined
-in Fig.\[fig:vanPc\] and Fig.\[fig:vanKr\], the residual saturation of
-water is 0.24.
+The initial capillary pressure curve and relative permeability curves are shown in Fig.\[fig:vanPc\] and Fig.\[fig:vanKr\] for this pore network. They are calculated by running primary drainage of non-wetting phase through an initially water-saturated sample. As can be determined in Fig.\[fig:vanPc\] and Fig.\[fig:vanKr\], the residual saturation of water is 0.24.
 
-In order to determine a reasonable value for the parameter $m$, we use
-Eq.\[eq:Sh\] to fit the capillary pressure curve in Fig.\[fig:vanPc\].
-Resulting parameters from fitting the capillary pressure curve are
-$m=0.748, \alpha=0.0001994 Pa^{-1}$. To test this $m$ value on the
-relative permeability curves, we used Eq.\[eq:KrS\_Mua\] and compared
-results with the relative permeabilities calculated from pore network
-modeling. Results show that the van Genuchten/Mualem model presents a
-satisfactory fit of initial capillary pressure and relative permeability
-curves. We then use the value of $m$ to predict how the capillary
-pressure curve and relative permeabilities change after chemical
-reactions, for a given amount of dissolved/precipitated minerals. The
-new capillary pressure and relative permeabilities are calculated from
-the initial values and the modification factors from our relations. The
-fitted initial van Genuchten/Mualem curves are not used in these
-calculation, thus do not affect the results. The main objective in the
-fitting process is to obtain the value of $m$ which contains information
-on the shape of pore size distribution function, and is used in the
-relations.
+In order to determine a reasonable value for the parameter $m$, we use Eq.\[eq:Sh\] to fit the capillary pressure curve in Fig.\[fig:vanPc\]. Resulting parameters from fitting the capillary pressure curve are $m=0.748, \alpha=0.0001994 Pa^{-1}$. To test this $m$ value on the relative permeability curves, we used Eq.\[eq:KrS\_Mua\] and compared results with the relative permeabilities calculated from pore network modeling. Results show that the van Genuchten/Mualem model presents a satisfactory fit of initial capillary pressure and relative permeability curves. We then use the value of $m$ to predict how the capillary
+pressure curve and relative permeabilities change after chemical reactions, for a given amount of dissolved/precipitated minerals. The new capillary pressure and relative permeabilities are calculated from the initial values and the modification factors from our relations. The fitted initial van Genuchten/Mualem curves are not used in these calculation, thus do not affect the results. The main objective in the fitting process is to obtain the value of $m$ which contains information on the shape of pore size distribution function, and is used in the relations.
 
 
 Porosity-Permeability Relationship
 ----------------------------------
 
-For the purpose of comparing pore network modeling results with the new
-closed-form equations, we select two water saturations of 0.5 and 1.0 as
-the saturations at which mineral dissolution/precipitation occurs. Here
-we refer the two cases as the ‘new approach’ and the ‘traditional
-approach’ respectively since traditionally the relation between flow
-properties and chemical reactions are built on the assumption of full
-water saturation. In the new approach, we use the pore network model and
-run a primary drainage from the initial water-saturated condition to the
-target water saturation of 0.5. The bonds and nodes that are filled with
-water were identified in the pore network model when water saturation
-reaches $S_p= 0.5$. As shown in Fig.\[fig:PNM\], the red is the invaded
-non-wetting phase at $S_p=0.5$, while the blue is water. Subsequently,
-the radii of the water-occupied bonds and nodes were modified by a
-factor of $\delta$ according to Eqs.\[eq:beta\] and \[eq:delta\] for a
-given porosity change. In the traditional approach, the pore radii of
-all pores and throats are modified in the pore network model given the
-same amount of porosity change. This corresponds to the traditional
-assumption in which chemical reactions are considered to occur in all
-pores. The modified pore network models using both approaches were
-flooded again with non-wetting phase starting from a fully water
-saturated condition to calculate the new permeability, capillary
-pressure and relative permeability curves.
+For the purpose of comparing pore network modeling results with the new closed-form equations, we select two water saturations of 0.5 and 1.0 as the saturations at which mineral dissolution/precipitation occurs. Here we refer the two cases as the ‘new approach’ and the ‘traditional approach’ respectively since traditionally the relation between flow properties and chemical reactions are built on the assumption of full water saturation. In the new approach, we use the pore network model and run a primary drainage from the initial water-saturated condition to the target water saturation of 0.5. The bonds and nodes that are filled with water were identified in the pore network model when water saturation reaches $S_p= 0.5$. As shown in Fig.\[fig:PNM\], the red is the invaded non-wetting phase at $S_p=0.5$, while the blue is water. Subsequently, the radii of the water-occupied bonds and nodes were modified by a factor of $\delta$ according to Eqs.\[eq:beta\] and \[eq:delta\] for a given porosity change. In the traditional approach, the pore radii of all pores and throats are modified in the pore network model given the same amount of porosity change. This corresponds to the traditional assumption in which chemical reactions are considered to occur in all pores. The modified pore network models using both approaches were flooded again with non-wetting phase starting from a fully water saturated condition to calculate the new permeability, capillary pressure and relative permeability curves.
 
-Fig.\[fig:PermPoro\] shows permeabilities of modified pore network
-models as a function of porosity change using the two approaches. The
-values of $\beta$ are calculated from the porosity change using
-Eq.\[eq:beta\_porosity\] where $S_p=0.5, \phi_0=0.24$. Given that
-$\beta \geq 0$, we have $\phi_{min}/\phi_0=1-S_p=0.5$, which means that
-porosity cannot drop below 50% of its original value given $S_p=0.5$,
-because precipitation cannot be more than available pore volume. Ideally
-porosity does not have an upper limit due to dissolution. However, since
-the current work only considers the change in pore size, it will not be
-valid when the porosity increase is large and pore structure is heavily
-modified. In fact, there will probably be wormholes forming when
-porosity increases substantially, which has not yet been well modeled.
-For the range of porosity depicted in Fig.\[fig:PermPoro\] (0.19-0.27),
-the value of $\beta$ ranges from 0.583 to 1.25, and the value of
-$\delta$ ranges from 0.088 to 2.73.
+Fig.\[fig:PermPoro\] shows permeabilities of modified pore network models as a function of porosity change using the two approaches. The values of $\beta$ are calculated from the porosity change using Eq.\[eq:beta\_porosity\] where $S_p=0.5, \phi_0=0.24$. Given that $\beta \geq 0$, we have $\phi_{min}/\phi_0=1-S_p=0.5$, which means that porosity cannot drop below 50% of its original value given $S_p=0.5$, because precipitation cannot be more than available pore volume. Ideally porosity does not have an upper limit due to dissolution. However, since the current work only considers the change in pore size, it will not be valid when the porosity increase is large and pore structure is heavily modified. In fact, there will probably be wormholes forming when porosity increases substantially, which has not yet been well modeled. For the range of porosity depicted in Fig.\[fig:PermPoro\] (0.19-0.27), the value of $\beta$ ranges from 0.583 to 1.25, and the value of $\delta$ ranges from 0.088 to 2.73.
 
-In Fig.\[fig:PermPoro\] it can be observed that using the traditional
-approach in which precipitation is assumed to happen in all pores and
-throats, permeability decreases up to 3 orders of magnitude when
-porosity decreases from 0.24 to 0.19. However, if precipitation is
-limited in the water occupied pores and throats, only the radii of the
-small pores and throats are decreased, while the other pores and throats
-remain unchanged. Thus permeability converges to a value which
-corresponds to all the unchanged pores and throats and does not decrease
-to zero. This is well captured by the present model, which we refer to
-as the modified [@liu2013permeability] model because the
-[@liu2013permeability] model only considered the change in radius but
-not in volume of the pores after mineral reactions as discussed in
-Section \[S:3\]. The permeability change can be characterized into two
-regions, a transitional stage from porosity 0.24 to 0.22, and a plateau
-where permeability is relatively constant when porosity is smaller than
-0.22. Most of the permeability is contributed from the unchanged pores
-and throats on this plateau. The traditional method which assumes that
-all pores and throats are filled by precipitations fails to capture this
-result.
+In Fig.\[fig:PermPoro\] it can be observed that using the traditional approach in which precipitation is assumed to happen in all pores and throats, permeability decreases up to 3 orders of magnitude when porosity decreases from 0.24 to 0.19. However, if precipitation is limited in the water occupied pores and throats, only the radii of the small pores and throats are decreased, while the other pores and throats remain unchanged. Thus permeability converges to a value which corresponds to all the unchanged pores and throats and does not decrease to zero. This is well captured by the present model, which we refer to as the modified [@liu2013permeability] model because the [@liu2013permeability] model only considered the change in radius but not in volume of the pores after mineral reactions as discussed in Section \[S:3\]. The permeability change can be characterized into two regions, a transitional stage from porosity 0.24 to 0.22, and a plateau where permeability is relatively constant when porosity is smaller than 0.22. Most of the permeability is contributed from the unchanged pores and throats on this plateau. The traditional method which assumes that all pores and throats are filled by precipitations fails to capture this result.
 
 
 Capillary Pressure and Relative Permeabilities
 ----------------------------------------------
 
-The predicted capillary pressure and relative permeabilities from pore
-network calculations are compared with our model in
-Figs.\[fig:PcPcp\]-\[fig:KrgDss\]. Two sets of calculations were
-conducted and compared. The first set of calculations assumes a decrease
-of porosity from 0.24 to 0.2015 ($\beta=0.6795,\delta=0.1757$), which
-represents precipitation, and the second set of calculations increases
-porosity from 0.24 to 0.2592 ($\beta=1.160,\delta=1.952$), which
-represents dissolution. The dashed lines in all figures are the initial
-capillary pressure or relative permeabilities. The solid lines represent
-predictions from our current model and the dots are results from pore
-network modeling. The initial PNM data is used directly in our model and
-modifications of this data are applied after dissolution or
-precipitation based on our new relations.
+The predicted capillary pressure and relative permeabilities from pore network calculations are compared with our model in Figs.\[fig:PcPcp\]-\[fig:KrgDss\]. Two sets of calculations were conducted and compared. The first set of calculations assumes a decrease of porosity from 0.24 to 0.2015 ($\beta=0.6795,\delta=0.1757$), which represents precipitation, and the second set of calculations increases porosity from 0.24 to 0.2592 ($\beta=1.160,\delta=1.952$), which represents dissolution. The dashed lines in all figures are the initial capillary pressure or relative permeabilities. The solid lines represent predictions from our current model and the dots are results from pore network modeling. The initial PNM data is used directly in our model and modifications of this data are applied after dissolution or precipitation based on our new relations.
 
-In Fig.\[fig:PcPcp\], capillary pressure is increased by a factor of
-$1/\delta$ for water saturation smaller than 0.5,using the new approach,
-while remains unchanged for water saturation larger than 0.5, according
-to Eq.\[eq:PcPcp\]. Thus, there is an offset at $S_w=0.5$ that is well
-captured by our model and the pore network calculation. In
-Fig.\[fig:KrwPcp\], the relative permeability of water is decreased by a
-factor of $\delta^3\beta^2$ for $S_w<0.5$ according to Eq.\[eq:KrwPcp\].
-Again, there is an offset at $S_w=0.5$, and the change of relative
-permeability is less substantial for $S_w>0.5$. The relative
-permeability of non-wetting phase in Fig.\[fig:KrgPcp\] is unchanged for
-$S_w>0.5$, but reduced for $S_w<0.5$ according to Eq.\[eq:KrgPcp\].
+In Fig.\[fig:PcPcp\], capillary pressure is increased by a factor of $1/\delta$ for water saturation smaller than 0.5,using the new approach, while remains unchanged for water saturation larger than 0.5, according to Eq.\[eq:PcPcp\]. Thus, there is an offset at $S_w=0.5$ that is well captured by our model and the pore network calculation. In Fig.\[fig:KrwPcp\], the relative permeability of water is decreased by a factor of $\delta^3\beta^2$ for $S_w<0.5$ according to Eq.\[eq:KrwPcp\]. Again, there is an offset at $S_w=0.5$, and the change of relative permeability is less substantial for $S_w>0.5$. The relative permeability of non-wetting phase in Fig.\[fig:KrgPcp\] is unchanged for $S_w>0.5$, but reduced for $S_w<0.5$ according to Eq.\[eq:KrgPcp\].
 
-Fig.\[fig:PcDss\]-Fig.\[fig:KrgDss\] show the capillary pressure and
-relative permeability changes in the dissolution case, and the results
-from pore network models are well captured by our closed-form equations.
-Note that the relations of how relative permeabilities change after
-mineral dissolution is not given explicitly in this work, due to the
-fact that capillary pressure head cannot be written as an explicit
-function of water saturation (Eq.\[eq:PcDss\]). In Fig.\[fig:KrwDss\]
-and \[fig:KrgDss\] we adopted the relations for relative permeabilities
-in the precipitation case (Eq.\[eq:KrwPcp\] and \[eq:KrgPcp\]), and
-these relations fit the PNM data relatively well. In fact, Eq.
-\[eq:KrwPcp\] and \[eq:KrgPcp\] are valid in the dissolution case for
-$S<S_1$ and $S>S_2$ (Fig.\[fig:example\]), since the $Pc-S$ relations
-are the same for dissolution and precipitation in these two regions.
-However, the interpolation between $S_1$ and $S_2$ will be slightly
-different. For permeability, the relation in the dissolution case is
-identical to the precipitation case. In the dissolution case, the pore
-sizes need to be rearranged to be consistent with the order of capillary
-tubes filled by water, from small to large. However, since permeability
-is calculated by integrating through all capillary tubes, the
-rearrangement does not affect the result. Thus the closed form relation
-for permeability change in the precipitation case can be directly used
-in the dissolution case.
+Fig.\[fig:PcDss\]-Fig.\[fig:KrgDss\] show the capillary pressure and relative permeability changes in the dissolution case, and the results from pore network models are well captured by our closed-form equations. Note that the relations of how relative permeabilities change after mineral dissolution is not given explicitly in this work, due to the fact that capillary pressure head cannot be written as an explicit function of water saturation (Eq.\[eq:PcDss\]). In Fig.\[fig:KrwDss\] and \[fig:KrgDss\] we adopted the relations for relative permeabilities in the precipitation case (Eq.\[eq:KrwPcp\] and \[eq:KrgPcp\]), and these relations fit the PNM data relatively well. In fact, Eq. [eq:KrwPcp\] and \[eq:KrgPcp\] are valid in the dissolution case for
+$S<S_1$ and $S>S_2$ (Fig.\[fig:example\]), since the $Pc-S$ relations are the same for dissolution and precipitation in these two regions. However, the interpolation between $S_1$ and $S_2$ will be slightly different. For permeability, the relation in the dissolution case is identical to the precipitation case. In the dissolution case, the pore sizes need to be rearranged to be consistent with the order of capillary tubes filled by water, from small to large. However, since permeability is calculated by integrating through all capillary tubes, the rearrangement does not affect the result. Thus the closed form relation for permeability change in the precipitation case can be directly used in the dissolution case.
 
-In summary, the comparisons indicate that our proposed continuum-scale
-relations satisfactorily predict the pore-scale modeling results. The
-new method enables calculations of new permeability, capillary pressure
-and relative permeabilities in reservoir simulators after mineral
-reactions. It includes parameters that describe pore size distribution
-($m$), the fraction of pore space that is water filled when
-precipitation happens ($S_p$), and the amount of
-precipitation/dissolution ($\delta,\beta$). The related parameters are
-either model input (e.g., $m$), or intermediate modeling results (e.g.,
-$S_p$), for calculating two-phase flow, so no new parameters need to be
-defined in reservoir simulators or reactive transport codes.
+In summary, the comparisons indicate that our proposed continuum-scale relations satisfactorily predict the pore-scale modeling results. The new method enables calculations of new permeability, capillary pressure and relative permeabilities in reservoir simulators after mineral reactions. It includes parameters that describe pore size distribution ($m$), the fraction of pore space that is water filled when precipitation happens ($S_p$), and the amount of precipitation/dissolution ($\delta,\beta$). The related parameters are either model input (e.g., $m$), or intermediate modeling results (e.g., $S_p$), for calculating two-phase flow, so no new parameters need to be defined in reservoir simulators or reactive transport codes.
 
 
 Discussions and Conclusions
 ===========================
 
-The capillary tube model, which is the foundation of the presented
-model, has several underlying assumptions [@larson1981percolation]. One
-is that the connectivity of real porous media and the irregular geometry
-of real porous matrices and associated effects are ignored. Also this
-model neglects the water wetting films in pores filled by a non-wetting
-phase. Hence we cannot model how chemical components diffuse through
-these water films and eventually react with a (small) fraction of the
-pore space. Despite these shortcomings, the capillary tube model is
-widely applied as a simple link between continuum-scale hydraulic
-properties and PSD’s [@taylor1990biofilm]. In this paper we integrate
-the concept of modifying pore volumes through mineral reactions into
-more sophisticated pore network models to relate PSD’s to capillary
-pressure curve and relative permeabilites. Comparisons between our
-capillary tube model and pore network model show that satisfactory
-predictions can be achieved using the capillary tube model for changes
-in capillary pressure, permeability and relative permeabilites.
+The capillary tube model, which is the foundation of the presented model, has several underlying assumptions [@larson1981percolation]. One is that the connectivity of real porous media and the irregular geometry of real porous matrices and associated effects are ignored. Also this model neglects the water wetting films in pores filled by a non-wetting phase. Hence we cannot model how chemical components diffuse through these water films and eventually react with a (small) fraction of the pore space. Despite these shortcomings, the capillary tube model is widely applied as a simple link between continuum-scale hydraulic properties and PSD’s [@taylor1990biofilm]. In this paper we integrate the concept of modifying pore volumes through mineral reactions into more sophisticated pore network models to relate PSD’s to capillary pressure curve and relative permeabilites. Comparisons between our capillary tube model and pore network model show that satisfactory predictions can be achieved using the capillary tube model for changes in capillary pressure, permeability and relative permeabilites.
 
-The main contribution in this paper is the advancement of
-continuum-scale models for the effect of chemical reactions on
-multi-phase flow properties. One key step in reactive transport modeling
-is to capture these effects for feedbacks of chemical reaction on fluid
-flow. Currently in most reactive transport simulators this is limited to
-estimating permeability change from porosity change. However, due to the
-fact that permeability is not a single function of porosity, but also a
-function of pore geometry, the current approach has large uncertainties.
-In this paper, we adopt the @liu2013permeability model for permeability
-change which not only considers porosity change but also takes into
-account pore size distribution and water saturation. We extend the
-@liu2013permeability model to multi-phase flow properties, and provide
-closed-form equations on how capillary pressure and relative
-permeabilities should change due to chemical reactions. These relations
-are continuum-scale equations, and can be implemented in reactive
+The main contribution in this paper is the advancement of continuum-scale models for the effect of chemical reactions on multi-phase flow properties. One key step in reactive transport modeling is to capture these effects for feedbacks of chemical reaction on fluid flow. Currently in most reactive transport simulators this is limited to estimating permeability change from porosity change. However, due to the fact that permeability is not a single function of porosity, but also a function of pore geometry, the current approach has large uncertainties. In this paper, we adopt the @liu2013permeability model for permeability change which not only considers porosity change but also takes into account pore size distribution and water saturation. We extend the @liu2013permeability model to multi-phase flow properties, and provide
+closed-form equations on how capillary pressure and relative permeabilities should change due to chemical reactions. These relations are continuum-scale equations, and can be implemented in reactive
 transport models directly without introducing additional parameters.
 
-![Work flow to develop new constitute relations for multi-phase flow
-properties and chemical
-reactions.[]{data-label="fig:workflow"}](PoreBundleModel.pdf){width="0.8\linewidth"}
+![Work flow to develop new constitute relations for multi-phase flow properties and chemical reactions.[]{data-label="fig:workflow"}](PoreBundleModel.pdf){width="0.8\linewidth"}
 
-![Snap shot of the Berea pore network model at water saturation of 0.5.
-Blue color represents water, red color represents the non-wetting phase.
-Size of the model is 2.14 mm x 2.14 mm x 2.14
-mm.[]{data-label="fig:PNM"}](PNM.jpg){width="0.8\linewidth"}
+![Snap shot of the Berea pore network model at water saturation of 0.5. Blue color represents water, red color represents the non-wetting phase. Size of the model is 2.14 mm x 2.14 mm x 2.14 mm.[]{data-label="fig:PNM"}](PNM.jpg){width="0.8\linewidth"}
