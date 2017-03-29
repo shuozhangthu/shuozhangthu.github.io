@@ -4,7 +4,7 @@
 
  .. slug: zhang2016constitutive
 
- .. date: 2017-03-26 
+ .. date: 2017-03-29 
 
  .. tags: Mineral reactions, multiphase flow properties, reactive transport, constitutive relations
 
@@ -125,7 +125,7 @@ $$
 if $S\leq S_p,$
 $$
 h(S)=h_0(S)
-$$ 
+$$
 if $S>S_p$,
 where $h_0$ is the initial capillary pressure head at saturation $S$. This means that capillary pressure is increased by a factor of $1/\delta$ for $S\leq S_p$ in the case of precipitation ($\delta<1$), and unchanged for $S>S_p$. Note that the new $h$-$S$ curve is not continuous at $S=S_p$. This is because that mineral precipitation/dissolution only occurs in the water phase where $S\leq S_p$.
 
@@ -249,6 +249,7 @@ Fig.\[fig:PermPoro\] shows permeabilities of modified pore network models as a f
 In Fig.\[fig:PermPoro\] it can be observed that using the traditional approach in which precipitation is assumed to happen in all pores and throats, permeability decreases up to 3 orders of magnitude when porosity decreases from 0.24 to 0.19. However, if precipitation is limited in the water occupied pores and throats, only the radii of the small pores and throats are decreased, while the other pores and throats remain unchanged. Thus permeability converges to a value which corresponds to all the unchanged pores and throats and does not decrease to zero. This is well captured by the present model, which we refer to as the modified [@liu2013permeability] model because the [@liu2013permeability] model only considered the change in radius but not in volume of the pores after mineral reactions as discussed in Section \[S:3\]. The permeability change can be characterized into two regions, a transitional stage from porosity 0.24 to 0.22, and a plateau where permeability is relatively constant when porosity is smaller than 0.22. Most of the permeability is contributed from the unchanged pores and throats on this plateau. The traditional method which assumes that all pores and throats are filled by precipitations fails to capture this result.
 
 ![](/files/PermPoro.png){ width=500px }
+
 
 Capillary Pressure and Relative Permeabilities
 ----------------------------------------------
