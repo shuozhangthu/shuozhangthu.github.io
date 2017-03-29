@@ -16,14 +16,14 @@ In CO$_2$ sequestration, well injectivity is a critical issue. The injected dry 
 
 
 
-![@andre2014well](/files/Andre2014Field.jpg){ width=200px }
+![@andre2014well](/files/Andre2014Field.jpg){ width=500px }
 
 
 
 
 Field-scale simulations require input on flow physics such as the porosity-permeability relationship. Porosity change can be calculated simply from the volume of precipitated salt. The change of permeability, however, is a complex problem. The most widely used porosity-permeability relationship in current numerical simulations is the tube-in-series model proposed by @verma1988thermohydrological. This model allows to reach zero permeability even if porosity is not nil. In this model, pore geometry is conceptualized as a series of one-dimensional tubes that are identical to each other. Each tube consists of wide and narrow segments, and the permeability value is dominated by the local radii of the narrowest part of the tube. When salt precipitates on the tube walls, the local permeability for the narrow segments decreases much more rapidly than those for the wide segments. The result is clogging of the entire tube. @pruess2009formation used this relationship in their numerical simulator TOUGH2 [@pruess1991tough2] to explore the role of different parameters in the salt precipitation process and found that injectivity could be reduced significantly. For the given parameter values used in @pruess2009formation, reservoir permeability is reduced to zero when precipitated salt occupies 10% of the pore space.
 
-![@verma1988thermohydrological](/files/Tubes.png)
+![@verma1988thermohydrological](/files/Tubes.png){ width=500px }
 
 ![@verma1988thermohydrological](/files/Tubes.png)
 
@@ -33,7 +33,7 @@ Most recent publications related to salt precipitation in CO$_2$ storage have us
 
 Compared to the @verma1988thermohydrological model in which permeability change is a single function of porosity change, the @liu2013permeability model relates permeability change to not only porosity change, but also pore size distribution and water saturation at which precipitation takes place. The @liu2013permeability model is also a continuum-scale relation in that all parameters involved are available in current reservoir simulators. It is thus possible to implement this relation in a reservoir simulation code.
 
-![@ott2015salt](/files/Ott2015Concept.jpg)
+![@ott2015salt](/files/Ott2015Concept.jpg){ width=500px }
 
 
 
@@ -138,7 +138,7 @@ we have
 
 $$\dfrac{K}{K_0}=\tau^{1/2}[(\delta\beta-1)(1-(1-S^{1/m})^m)+1]^2.$$
 
-![](/files/PoreBundleModel.png)
+![](/files/PoreBundleModel.png){ width=500px }
 
 
 Compare with experimental measurements
@@ -146,7 +146,7 @@ Compare with experimental measurements
 
 Porosity-permeability relations fitted from experimental data provide empirical equations for field scale simulations, and sometimes such empirical relations are the most reliable options. However, due to the heterogeneity of salt precipitation in core flooding experiments, using the average porosity and permeability reduction measured for the entire core may not be a valid approach. Several experimental studies [@peysson2014well; @ott2015salt] have observed that the decrease in water saturation at the injection surface induces brine capillary back flow that transfers the brine toward the injection surface. Salt accumulates near the injection surface and precipitates when saturation is reached. In numerical simulations of such experiments, the representative element volume (REV) is defined as one thin slice of the core. In @andre2014well, the 60 mm long core was represented by 60 grid cells, with each cell being 1.0 mm thick, and most salt precipitation accumulated in the first few millimeters of the core, close to the injection zone. The porosity-permeability relationship is an equation that describes the physics in each REV, which is the 1.0 mm slice in this case. Using the porosity and permeability data for the entire core to fit a porosity-permeability relationship is not conceptually consistent with the REVs in numerical models. In fact, the capillary back flow and precipitation of salt near the injection zone can be reproduced by continuum-scale numerical models with two-phase Darcy flow, capillary pressure, and thermodynamics of salt precipitation. The porosity-permeability relationship should not double account for the rapid permeability reduction by heterogeneous precipitation. Given the difficulty in measuring porosity and permeability change in each slice of a core sample, the best data for fitting the porosity-permeability relation comes from experiments where salt precipitation is homogeneous along the core. @ott2015salt found that there is a critical flow rate above which salt precipitates homogeneously. At high injection rate, the viscose force increases, and the capillary force becomes less important to drive back flow. Using a flow rate of 4.4 ml/min, they observed a uniform salt saturation of 0.04 throughout the core after drying. However, such experimental data is rare, and in most experiments heterogeneous precipitation of salt is observed [@peysson2014well; @andre2014well; @ott2015salt]. One other option is to deliberately cut off the zone close to injection inlet and examine the rest of the core where precipitation is relatively uniform. In order to measure the permeability of a fraction of the core, pressure needs to be measured not only at the inlet and outlet, but also along the core length at discrete locations. Such measurements can be achieved by using side taps as in the setup in @wang2010halite.
 
-![@ott2015salt](/files/Ott2015Ss.jpg)
+![@ott2015salt](/files/Ott2015Ss.jpg){ width=500px }
 
 @liu2013permeability used the experimental work by @wang2010halite to compare their predictions on permeability change with experimental observations. The flood experiments were performed on brine saturated cores that were 1.5 inch in diameter and 1 foot longe. @liu2013permeability selected the data for the core segment between two side taps (3cm-13.05cm) and avoided the zone near the injection inlet (0-3cm). The ratio of the new permeability for this segment after CO$_2$ dry-out to the initial permeability measured in the experiment is 0.55, and the value predicted from the @liu2013permeability model is between 0.50 and 0.57. The prediction from the @liu2013permeability model is indeed close to the experimental measurement.
 
@@ -156,7 +156,7 @@ $$\dfrac{\rho_{aq}}{\rho_s} X_{salt} \times 0.7 PV = 0.0959 PV?$$
 
 where $\rho_{aq}=1180kg/m^3$ is the aqueous phase density and $\rho_s=2153kg/m^3$ is the density of precipitated salt. Using the above equation where $\phi / \phi_0=1-0.0959=0.9041,\phi_r=0.9$, we have $\dfrac{k}{k_0}=0.001681$. Obviously this overestimates the reduction of permeability compared to results using the @liu2013permeability model (0.50-0.57) and measured in the experiment (0.55).
 
-![@wang2010halite](/files/WangCore.JPG)
+![@wang2010halite](/files/WangCore.JPG){ width=500px }
 
 
 Does salt precipitate in the aqueous phase?
@@ -167,14 +167,14 @@ The key assumption in the @liu2013permeability relation is that salt precipitate
 @miri2015new conducted lab-on-chip experiments to explore the dynamics of salt precipitation at the pore-scale, and reached opposite conclusions. They found that salt aggregates attracted water from the adjacent network grains via continuous water films around the mineral grains through surface energy effects, and this enabled continued feeding of the evaporating front with fresh brine, thus allowing the
 continued growth of salt on these aggregates. The result of this mechanism was a large accumulation of salt in the form of aggregates in the gas phase. An important requirement for this self-enhancing mechanism was the interconnected films that were relative thick on the surface of grains. However, the existence of such thick water film and their practical significance in hydraulic conductivity needs further investigation. The flow mechanism associated with this significant film flow is not considered in this study.
 
-![@ott2015salt](/files/Ott2015.jpg)
+![@ott2015salt](/files/Ott2015.jpg){ width=500px }
 
 
 Numerical Simulation
 -----------
 By reviewing how the @verma1988thermohydrological and @liu2013permeability relations are derived, it is clear that the @verma1988thermohydrological relation is based on the capillary tube concept and assumes that mineral precipitation happens in all tubes, and that all tubes are identical. The @liu2013permeability relation takes into account the pore size distribution function (m), and distinguishes between the water occupied tubes and gas occupied tubes (using water saturation). In CO$_2$ sequestration, the simulations obviously involve two phases, i.e., CO$_2$ gas and water. For example, if water saturation is 50% when water evaporates into the CO$_2$ plume, the precipitated salt should clog the water occupied tubes, which are theoretically the small ones since water is the wetting phase. So only this 50% pore volume should be affected by salt precipitation. The @verma1988thermohydrological relation distributes the precipitated salt uniformly in all tubes. They assume that all tubes are identical but part of each tube has a small radius, so the distributed salt clogs the narrow part of the tubes first, thus clogging the entire porous medium. This approach predicts dramatic reduction of permeability by salt precipitation in their numerical simulation. However, different results are possible if the @liu2013permeability relation is used. In this paper we implement the @liu2013permeability relation in the TOUGH2 reservoir simulator, and re-run the reservoir simulation similar to the one in @pruess2009formation. Results using both the @pruess2009formation model and the @liu2013permeability model are presented in this section.
 
-![](/files/WorkFlow.png)
+![](/files/WorkFlow.png){ width=500px }
 
 
 Model setup
@@ -187,7 +187,7 @@ The well is modeled as a circular grid element of R = 0.3 m. The numerical grid 
 
 The modeled processes include two-phase flow of CO$_2$ and water subject to relative permeability and capillary effects, change of fluid density, viscosity, and CO$_2$ solubility with pressure and salinity, and formation dry-out with precipitation of salt. Salt precipitation is monitored and quantified by the change of solid saturation, which is the fraction of pore volume occupied by salt. The resulting porosities are calculated from the solid saturation values and the permeabilities are estimated using the implemented porosity-permeability relationships.
 
-![@pruess2009formation](/files/PruessSchematic.png)
+![@pruess2009formation](/files/PruessSchematic.png){ width=500px }
 
 
 Results comparison
@@ -195,7 +195,7 @@ Results comparison
 
 The @verma1988thermohydrological relation predicts that permeability decreases to almost zero near the injection well, while the @liu2013permeability relation predicts that the final permeability is around 50% of the initial permeability near the injection well. 
 
-![](/files/kred.png)
+![](/files/kred.png){ width=500px }
 
 
 Conclusions
