@@ -77,7 +77,7 @@ $$S=\frac{\theta-\theta_{r}}{\theta_{s}-\theta_{r}},$$
 
 where $\theta$ is the wetting-phase content (the ratio of wetting-phase volume to the corresponding bulk volume of a porous medium), and subscripts *s* and *r* refer to saturated and residual values for $\theta$.
 
-The capillary pressure head *h* is given as a function of effective wetting-phase saturation by @van1980closed:
+The capillary pressure head *h* is given as a function of effective wetting-phase saturation by @vangenuchten1980closed:
 
 $$S=[1+(\alpha h)^{n}]^{-m},$$
 
@@ -127,7 +127,7 @@ Thus, we have
 
 $$\dfrac{K}{K_0}=\tau^{1/2}[\dfrac{\int_0^{r_p} \delta\beta rf(r)dr+\int_{r_p}^\infty rf(r)dr}{\int_0^\infty rf(r)dr}]^2.$$
 
-Using the mathematical relation [@van1980closed],
+Using the mathematical relation [@vangenuchten1980closed],
 
 $$f(S)=\dfrac{\int_0^r rf(r)dr}{\int_0^\infty rf(r)dr}=1-(1-S^{1/m})^m,$$
 
@@ -178,7 +178,7 @@ Model setup
 -----------
 The numerical simulations described here are performed using the general purpose reservoir simulation code TOUGH2, coupled with the fluid property module ECO2N [@pruess2007eco2n]. Two simulations are conducted, one using the @verma1988thermohydrological relation for porosity and permeability and the other using the @liu2013permeability relation. All other input parameters are identical for the two simulations.
 
-We consider a basic problem of CO$_2$ injection into a saline aquifer under conditions that may be encountered in brine aquifers at a depth of the order of 1.2 km. A CO$_2$ injection well fully penetrates a homogeneous, isotropic, infinite-acting aquifer of 100 m thickness, at conditions of 12 MPa pressure, 45 C temperature, and a salinity of 0.25 by weight. Porosity is set at 24.02%, and permeability at 1.66 Darcy. The residual water saturation is assumed to be 0.30. The relative permeability and capillary pressure have been calculated using the @van1980closed models. The relative equations and parameters are listed in Table 1. CO$_2$ is injected at a constant rate of 100 kg/s. This problem is similar to the model in @pruess2009formation.
+We consider a basic problem of CO$_2$ injection into a saline aquifer under conditions that may be encountered in brine aquifers at a depth of the order of 1.2 km. A CO$_2$ injection well fully penetrates a homogeneous, isotropic, infinite-acting aquifer of 100 m thickness, at conditions of 12 MPa pressure, 45 C temperature, and a salinity of 0.25 by weight. Porosity is set at 24.02%, and permeability at 1.66 Darcy. The residual water saturation is assumed to be 0.30. The relative permeability and capillary pressure have been calculated using the @vangenuchten1980closed models. The relative equations and parameters are listed in Table 1. CO$_2$ is injected at a constant rate of 100 kg/s. This problem is similar to the model in @pruess2009formation.
 
 The well is modeled as a circular grid element of R = 0.3 m. The numerical grid is extended to a large distance of 100 km, so that the system would be infinite-acting for the time period simulated (10,000 days, 27.38 years). The upper and lower boundaries of the formation are closed, simulating impermeable layers at the top and bottom of the reservoir.
 
