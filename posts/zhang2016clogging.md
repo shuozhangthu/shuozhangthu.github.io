@@ -50,7 +50,7 @@ It seems to us that, compared to other models, the @liu2013permeability model pr
 |----------:|-----------------------------:|------------:|
 |  @pruess2009formation      |$\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^2,\phi_r=0.9$                                                                  |Verma and Pruess|
 |  @andre2014well            |$\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^2,\phi_r=0.91$                                                                 |Verma and Pruess|                                                           
-|  @ott2015salt              |$\dfrac{k}{k_0} =(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau (1-k_c/k_0) +k_c/k_0,\phi_r=0.8, \tau=10.1, k_c/k_0=3.5 \times 10^{-3}$  |Verma and Pruess|                                                            
+|  @ott2015salt              |$\dfrac{k}{k_0} =(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau (1-k_c/k_0) +k_c/k_0$  |Verma and Pruess|                                                            
 |  @giorgis20072d            |$\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau,\phi_r=0.3,\tau=4.1$                                                      |Verma and Pruess|                                                         
 |  @zeidouni2009analytical   |$\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^3 (\dfrac{1-\phi_0}{1-\phi})^2,\phi_0=0.12$                                                    |Carman-Kozeny|
 |  @wang2010halite           |$\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^c (\dfrac{1-\phi_0}{1-\phi})^2,c=2.4$                                                          |Carman-Kozeny|
