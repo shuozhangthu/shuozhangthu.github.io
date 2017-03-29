@@ -24,8 +24,6 @@ Field-scale simulations require input on flow physics such as the porosity-perme
 
 ![@verma1988thermohydrological](/files/Tubes.png)
 
-![@verma1988thermohydrological](/files/Tubes.png){ width=500px }
-
 
 
 Most recent publications related to salt precipitation in CO$_2$ storage have used the @verma1988thermohydrological porosity-permeability relationship, but with different parameter values from fitting of experimental data [@andre2014well; @muller2009co2; @bacci2013experimental; @giorgis20072d; @guyant2015salt; @ott2015salt]. Exceptions are the papers by @zeidouni2009analytical and @tang2015experimental where they use the simple Kozeny-Carman grain model [@carman1956flow; @carman1997fluid] based on spheres to calculate changes in permeability due to changes in porosity. Recently, @liu2013permeability points out that the @verma1988thermohydrological relation between permeability change and salt precipitation is based on a single phase flow model, but CO$_2$ sequestration involves two phases. They conceptualize the porous media as a series of tubes with different sizes, and develop a new relation between permeability change and salt precipitation that considers the fact that salt precipitation occurs only in the pore space occupied by brine during the precipitation process. This model is in agreement with observations by @ott2015salt in which they conduct core flooding experiments and claim that there is no transport mechanism of liquid water vapor across the CO$_2$ brine interface and hence no transport mechanism of salt into the CO$_2$ flow channels. These CO$_2$ flow channels will stay open since salt precipitates in the residual brine phase.
