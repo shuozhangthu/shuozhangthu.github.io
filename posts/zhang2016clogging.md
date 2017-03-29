@@ -16,7 +16,7 @@ In CO$_2$ sequestration, well injectivity is a critical issue. The injected dry 
 
 
 
-<img src="/files/Andre2014Field.jpg" style="float: center; alt=@andre2014well; width: 500px;"/>
+<img src="/files/Andre2014Field.jpg" style="float: center; alt: @andre2014well; width: 500px;"/>
 
 
 
