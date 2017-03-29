@@ -148,7 +148,7 @@ $$\dfrac{\rho_{aq}}{\rho_s} X_{salt} \times 0.7 PV = 0.0959 PV?$$
 
 where $\rho_{aq}=1180kg/m^3$ is the aqueous phase density and $\rho_s=2153kg/m^3$ is the density of precipitated salt. Using the above equation where $\phi / \phi_0=1-0.0959=0.9041,\phi_r=0.9$, we have $\dfrac{k}{k_0}=0.001681$. Obviously this overestimates the reduction of permeability compared to results using the @liu2013permeability model (0.50-0.57) and measured in the experiment (0.55).
 
-![@wang2010halite](/files/WangCore.jpg)
+![@wang2010halite](/files/WangCore.JPG)
 
 Does salt precipitate in the aqueous phase?
 -------------------------------------------
