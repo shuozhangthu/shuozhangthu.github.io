@@ -14,7 +14,12 @@ Introduction
 
 In CO$_2$ sequestration, well injectivity is a critical issue. The injected dry gas, at low water-vapor partial pressure, will equilibrate with the formation brine and water will evaporate into the flowing CO$_2$ stream. Water salinity increases as a result and eventually precipitates out salt. This effect has been reported for gas producing wells in reservoirs of high salinity brine [@kleinitz2003halite] and during storage of natural gas [@place1984unusual]. The source of extra pressure build-up in the Ketzin [@baumann2014monitoring] and Snohvit [@grude2014pressure] CO$_2$ storage projects is partly assigned to salt precipitation. Probably because few large-scale pilots have been built for CO$_2$ sequestration, direct observations of salt precipitation have not been available at field scale. Right now we rely on numerical simulations [@giorgis20072d; @pruess2009formation; @qiao2014compositional; @zeidouni2009analytical] and experimental studies [@pearce1996natural; @andre2014well; @ott2015salt; @roels2016capillary; @muller2009co2; @tang2015experimental; @wang2010halite] to determine the key parameters involved so that we can correctly model well injectivity on the field scale.
 
-![@andre2014well](/files/Andre2014Field.jpg)
+
+
+<img src="/files/Andre2014Field.jpg" alt="@andre2014well" style="width: 200px;"/>
+
+
+
 
 Field-scale simulations require input on flow physics such as the porosity-permeability relationship. Porosity change can be calculated simply from the volume of precipitated salt. The change of permeability, however, is a complex problem. The most widely used porosity-permeability relationship in current numerical simulations is the tube-in-series model proposed by @verma1988thermohydrological. This model allows to reach zero permeability even if porosity is not nil. In this model, pore geometry is conceptualized as a series of one-dimensional tubes that are identical to each other. Each tube consists of wide and narrow segments, and the permeability value is dominated by the local radii of the narrowest part of the tube. When salt precipitates on the tube walls, the local permeability for the narrow segments decreases much more rapidly than those for the wide segments. The result is clogging of the entire tube. @pruess2009formation used this relationship in their numerical simulator TOUGH2 [@pruess1991tough2] to explore the role of different parameters in the salt precipitation process and found that injectivity could be reduced significantly. For the given parameter values used in @pruess2009formation, reservoir permeability is reduced to zero when precipitated salt occupies 10% of the pore space.
 
@@ -27,6 +32,7 @@ Most recent publications related to salt precipitation in CO$_2$ storage have us
 Compared to the @verma1988thermohydrological model in which permeability change is a single function of porosity change, the @liu2013permeability model relates permeability change to not only porosity change, but also pore size distribution and water saturation at which precipitation takes place. The @liu2013permeability model is also a continuum-scale relation in that all parameters involved are available in current reservoir simulators. It is thus possible to implement this relation in a reservoir simulation code.
 
 ![@ott2015salt](/files/Ott2015Concept.jpg)
+
 
 
 
@@ -46,16 +52,16 @@ What porosity-permeability relationships are used in recent studies
 It seems to us that, compared to other models, the @liu2013permeability model provides a more physics sound relation for porosity and permeability evolution, since it honors the physical process of salt precipitation in a two-phase system and is based on well-established relative permeability relationships.
 
 
-|Publication|Porosity-permeability relation|Relation type|
-|----------:|-----------------------------:|------------:|
-|  @pruess2009formation      |$\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^2,\phi_r=0.9$                                                                  |Verma and Pruess|
-|  @andre2014well            |$\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^2,\phi_r=0.91$                                                                 |Verma and Pruess|                                                           
-|  @ott2015salt              |$\dfrac{k}{k_0} =(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau (1-k_c/k_0) +k_c/k_0$  |Verma and Pruess|                                                            
-|  @giorgis20072d            |$\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau,\phi_r=0.3,\tau=4.1$                                                      |Verma and Pruess|                                                         
-|  @zeidouni2009analytical   |$\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^3 (\dfrac{1-\phi_0}{1-\phi})^2,\phi_0=0.12$                                                    |Carman-Kozeny|
-|  @wang2010halite           |$\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^c (\dfrac{1-\phi_0}{1-\phi})^2,c=2.4$                                                          |Carman-Kozeny|
-|  @mohamed2013fluid         |$\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^c (\dfrac{1-\phi_0}{1-\phi})^2,c=4.53\sim445.0$                                                |Carman-Kozeny|
-|  @mohamed2013fluid         |$\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^n,n=5.17\sim448.2$                                                                             |Power Law|
+|             Publication |           Porosity-permeability relation |    Relation type |
+| ----------------------: | ---------------------------------------: | ---------------: |
+|    @pruess2009formation | $\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^2,\phi_r=0.9$ | Verma and Pruess |
+|          @andre2014well | $\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^2,\phi_r=0.91$ | Verma and Pruess |
+|            @ott2015salt | $\dfrac{k}{k_0} =(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau (1-k_c/k_0) +k_c/k_0$ | Verma and Pruess |
+|          @giorgis20072d | $\dfrac{k}{k_0}=(\dfrac{\phi/\phi_0-\phi_r}{1-\phi_r})^\tau,\phi_r=0.3,\tau=4.1$ | Verma and Pruess |
+| @zeidouni2009analytical | $\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^3 (\dfrac{1-\phi_0}{1-\phi})^2,\phi_0=0.12$ |    Carman-Kozeny |
+|         @wang2010halite | $\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^c (\dfrac{1-\phi_0}{1-\phi})^2,c=2.4$ |    Carman-Kozeny |
+|       @mohamed2013fluid | $\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^c (\dfrac{1-\phi_0}{1-\phi})^2,c=4.53\sim445.0$ |    Carman-Kozeny |
+|       @mohamed2013fluid | $\dfrac{k}{k_0}=(\dfrac{\phi}{\phi_0})^n,n=5.17\sim448.2$ |        Power Law |
 
 
 
@@ -150,6 +156,7 @@ where $\rho_{aq}=1180kg/m^3$ is the aqueous phase density and $\rho_s=2153kg/m^3
 
 ![@wang2010halite](/files/WangCore.JPG)
 
+
 Does salt precipitate in the aqueous phase?
 -------------------------------------------
 
@@ -166,6 +173,7 @@ Numerical Simulation
 By reviewing how the @verma1988thermohydrological and @liu2013permeability relations are derived, it is clear that the @verma1988thermohydrological relation is based on the capillary tube concept and assumes that mineral precipitation happens in all tubes, and that all tubes are identical. The @liu2013permeability relation takes into account the pore size distribution function (m), and distinguishes between the water occupied tubes and gas occupied tubes (using water saturation). In CO$_2$ sequestration, the simulations obviously involve two phases, i.e., CO$_2$ gas and water. For example, if water saturation is 50% when water evaporates into the CO$_2$ plume, the precipitated salt should clog the water occupied tubes, which are theoretically the small ones since water is the wetting phase. So only this 50% pore volume should be affected by salt precipitation. The @verma1988thermohydrological relation distributes the precipitated salt uniformly in all tubes. They assume that all tubes are identical but part of each tube has a small radius, so the distributed salt clogs the narrow part of the tubes first, thus clogging the entire porous medium. This approach predicts dramatic reduction of permeability by salt precipitation in their numerical simulation. However, different results are possible if the @liu2013permeability relation is used. In this paper we implement the @liu2013permeability relation in the TOUGH2 reservoir simulator, and re-run the reservoir simulation similar to the one in @pruess2009formation. Results using both the @pruess2009formation model and the @liu2013permeability model are presented in this section.
 
 ![](/files/WorkFlow.png)
+
 
 Model setup
 -----------
@@ -187,12 +195,14 @@ The @verma1988thermohydrological relation predicts that permeability decreases t
 
 ![](/files/kred.png)
 
+
 Conclusions
 ------------------------
 
 Systematic experiments are in need to validate the porosity-permeability relations proposed by @verma1988thermohydrological and @liu2013permeability. Such experiments should include measurement of porosity and permeability in well defined representative element volumes. Two mechanisms could cause severe reduction of core permeability, although this reduction should not be double accounted for by the porosity-permeability relation intended for the REVs as discussed above. One mechanism is the capillary driven back flow that transport brine to close to the injection surface. Pore space is thus filled with more salt at these locations. The other possible mechanism is a boundary effect at the injection surface. Since the brine at the injection surface is fully exposed to CO$_2$ gas, and initially the brine occupies all pore space at the injection surface, it is possible that this brine will all evaporate and leave the entire injection surface clogged. The core permeability will be zero with this one surface clogged.
 
 Field observation of salt precipitation in CO$_2$ sequestration projects have not been reported yet, but will be invaluable once available. Such observations can be used to confirm whether salt precipitation is severe at the injection surface, and whether capillary back flow is important at conditions encountered in field operations.
+
 
 Literature Cited
 ----------------
