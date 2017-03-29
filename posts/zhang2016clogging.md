@@ -12,16 +12,18 @@
 Introduction
 ---------------------------
 
-In CO$_2$ sequestration, well injectivity is a critical issue. The injected dry gas, at low water-vapor partial pressure, will equilibrate with the formation brine and water will evaporate into the flowing CO$_2$ stream. Water salinity increases as a result and eventually precipitates out salt. This effect has been reported for gas producing wells in reservoirs of high salinity brine [@kleinitz2003halite] and during storage of natural gas [@placejr1984unusual]. The source of extra pressure build-up in the Ketzin [@baumann2014monitoring] and Snohvit [@grude2014pressure] CO$_2$ storage projects is partly assigned to salt precipitation. Probably because few large-scale pilots have been built for CO$_2$ sequestration, direct observations of salt precipitation have not been available at field scale. Right now we rely on numerical simulations [@giorgis20072d; @pruess2009formation; @qiao2014compositional; @zeidouni2009analytical] and experimental studies [@pearce1996natural; @andre2014well; @ott2015salt; @roels2016capillary; @muller2009co2; @tang2015experimental; @wang2010halite] to determine the key parameters involved so that we can correctly model well injectivity on the field scale.
+In CO$_2$ sequestration, well injectivity is a critical issue. The injected dry gas, at low water-vapor partial pressure, will equilibrate with the formation brine and water will evaporate into the flowing CO$_2$ stream. Water salinity increases as a result and eventually precipitates out salt. This effect has been reported for gas producing wells in reservoirs of high salinity brine [@kleinitz2003halite] and during storage of natural gas [@place1984unusual]. The source of extra pressure build-up in the Ketzin [@baumann2014monitoring] and Snohvit [@grude2014pressure] CO$_2$ storage projects is partly assigned to salt precipitation. Probably because few large-scale pilots have been built for CO$_2$ sequestration, direct observations of salt precipitation have not been available at field scale. Right now we rely on numerical simulations [@giorgis20072d; @pruess2009formation; @qiao2014compositional; @zeidouni2009analytical] and experimental studies [@pearce1996natural; @andre2014well; @ott2015salt; @roels2016capillary; @muller2009co2; @tang2015experimental; @wang2010halite] to determine the key parameters involved so that we can correctly model well injectivity on the field scale.
 
 
 
-<img src="/files/Andre2014Field.jpg" style="float: center; alt: @andre2014well; width: 500px;"/>
+![@andre2014well](/files/Andre2014Field.jpg){ width=200px }
 
 
 
 
 Field-scale simulations require input on flow physics such as the porosity-permeability relationship. Porosity change can be calculated simply from the volume of precipitated salt. The change of permeability, however, is a complex problem. The most widely used porosity-permeability relationship in current numerical simulations is the tube-in-series model proposed by @verma1988thermohydrological. This model allows to reach zero permeability even if porosity is not nil. In this model, pore geometry is conceptualized as a series of one-dimensional tubes that are identical to each other. Each tube consists of wide and narrow segments, and the permeability value is dominated by the local radii of the narrowest part of the tube. When salt precipitates on the tube walls, the local permeability for the narrow segments decreases much more rapidly than those for the wide segments. The result is clogging of the entire tube. @pruess2009formation used this relationship in their numerical simulator TOUGH2 [@pruess1991tough2] to explore the role of different parameters in the salt precipitation process and found that injectivity could be reduced significantly. For the given parameter values used in @pruess2009formation, reservoir permeability is reduced to zero when precipitated salt occupies 10% of the pore space.
+
+![@verma1988thermohydrological](/files/Tubes.png)
 
 ![@verma1988thermohydrological](/files/Tubes.png)
 
