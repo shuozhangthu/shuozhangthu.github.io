@@ -1,20 +1,12 @@
 <!--
-
- .. title: How do minerals reactions change multiphase flow properties in reactive transport modeling
-
- .. slug: zhang2016constitutive
-
- .. date: 2017-03-29 
-
- .. tags: Mineral reactions, multiphase flow properties, reactive transport, constitutive relations
-
- .. link: 
-
- .. description: 
-
- .. type: text
-
- -->
+.. title: How do minerals reactions change multiphase flow properties in reactive transport modeling
+.. slug: zhang2016constitutive
+.. date: 2017-03-29 
+.. tags: Mineral reactions, multiphase flow properties, reactive transport, constitutive relations
+.. link: 
+.. description: 
+.. type: text
+-->
 
 
 Introduction 
