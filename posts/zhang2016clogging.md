@@ -20,18 +20,22 @@ In CO$_2$ sequestration, well injectivity is a critical issue. The injected dry 
 
 
 
-
 Field-scale simulations require input on flow physics such as the porosity-permeability relationship. Porosity change can be calculated simply from the volume of precipitated salt. The change of permeability, however, is a complex problem. The most widely used porosity-permeability relationship in current numerical simulations is the tube-in-series model proposed by @verma1988thermohydrological. This model allows to reach zero permeability even if porosity is not nil. In this model, pore geometry is conceptualized as a series of one-dimensional tubes that are identical to each other. Each tube consists of wide and narrow segments, and the permeability value is dominated by the local radii of the narrowest part of the tube. When salt precipitates on the tube walls, the local permeability for the narrow segments decreases much more rapidly than those for the wide segments. The result is clogging of the entire tube. @pruess2009formation used this relationship in their numerical simulator TOUGH2 [@pruess1991tough2] to explore the role of different parameters in the salt precipitation process and found that injectivity could be reduced significantly. For the given parameter values used in @pruess2009formation, reservoir permeability is reduced to zero when precipitated salt occupies 10% of the pore space.
 
+
+
 ![@verma1988thermohydrological](/files/Tubes.png){ width=500px }
+
+
 
 ![@verma1988thermohydrological](/files/Tubes.png)
 
 
 Most recent publications related to salt precipitation in CO$_2$ storage have used the @verma1988thermohydrological porosity-permeability relationship, but with different parameter values from fitting of experimental data [@andre2014well; @muller2009co2; @bacci2013experimental; @giorgis20072d; @guyant2015salt; @ott2015salt]. Exceptions are the papers by @zeidouni2009analytical and @tang2015experimental where they use the simple Kozeny-Carman grain model [@carman1956flow; @carman1997fluid] based on spheres to calculate changes in permeability due to changes in porosity. Recently, @liu2013permeability points out that the @verma1988thermohydrological relation between permeability change and salt precipitation is based on a single phase flow model, but CO$_2$ sequestration involves two phases. They conceptualize the porous media as a series of tubes with different sizes, and develop a new relation between permeability change and salt precipitation that considers the fact that salt precipitation occurs only in the pore space occupied by brine during the precipitation process. This model is in agreement with observations by @ott2015salt in which they conduct core flooding experiments and claim that there is no transport mechanism of liquid water vapor across the CO$_2$ brine interface and hence no transport mechanism of salt into the CO$_2$ flow channels. These CO$_2$ flow channels will stay open since salt precipitates in the residual brine phase.
 
-
 Compared to the @verma1988thermohydrological model in which permeability change is a single function of porosity change, the @liu2013permeability model relates permeability change to not only porosity change, but also pore size distribution and water saturation at which precipitation takes place. The @liu2013permeability model is also a continuum-scale relation in that all parameters involved are available in current reservoir simulators. It is thus possible to implement this relation in a reservoir simulation code.
+
+
 
 ![@ott2015salt](/files/Ott2015Concept.jpg){ width=500px }
 
