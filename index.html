@@ -40,7 +40,7 @@ article: http://ogp.me/ns/article#
                     <time class="timeago" datetime="2017-03-29T00:00:00-05:00">2017-03-29 00:00</time>
 </div>
                 <div class="stats">
-                                <a href="posts/zhang2016constitutive.html#disqus_thread" data-disqus-identifier="cache\posts\zhang2016constitutive.html">Comments</a>
+                                <a href="posts/zhang2016constitutive.html#disqus_thread" data-disqus-identifier="cache/posts/zhang2016constitutive.html">Comments</a>
 
 
                 </div>
@@ -68,7 +68,7 @@ article: http://ogp.me/ns/article#
 <h2 id="introduction">Introduction</h2>
 <p>In order to model geochemical reactions together with subsurface flow and solute transport, reactive transport modeling (RTM) is receiving increasing interest <span class="citation">(C. I. Steefel, DePaolo, and Lichtner 2005)</span>. RTM refers to the creation of computer models that integrate chemical reactions with the transport of fluids through the Earth’s crust. Such models predict the distribution in space and time of the chemical reactions that occur along a flow path. Today, RTM has become an essential tool for the analysis of coupled physical, chemical, and biological processes in Earth systems. The advantage of this approach is that it links individual time- and space-dependent processes in complex natural systems.</p>
 <p>In order to model hydro-geochemical problems on a large scale, RTM employs continuum representations of the porous medium and assumes the existence of a representative elementary volume where, for instance, flow can be described by Darcy’s law <span class="citation">(C. I. Steefel, DePaolo, and Lichtner 2005)</span>. A porous medium is treated as continuous domains with macroscopic flow and transport parameters such as hydraulic conductivity, porosity, dispersivity, as well as geochemical parameters such as reactive surface area and reaction rates. However, geochemical reactions such as mineral dissolution/precipitation modify the porous medium’s pore structure. An up-scaling procedure is needed to predict changes in hydraulic properties such as permeability, capillary pressure, and relative permeabilities within the framework of continuum-scale flow and transport models.</p>
-<p>Currently the effects of chemical reactions on flow properties are represented as a relation between permeability and porosity in reactive transport modeling. Porosity is updated after chemical calculations from the change of mineral volumes, then permeability change is calculated from the porosity change using an empirical permeability-porosity relation, most commonly the Carman-Kozeny relation <span class="citation">(<span class="citeproc-not-found" data-reference-id="kozeny1927kapillare"><strong>???</strong></span>; Carman 1956)</span>, or the <span class="citation">Verma and Pruess (1988)</span> relation. To the best of our knowledge, there are no closed-form relations available yet for the effects of chemical reactions on multi-phase flow properties, and thus currently these effects cannot be accounted for in reactive transport modeling.</p>
+<p>Currently the effects of chemical reactions on flow properties are represented as a relation between permeability and porosity in reactive transport modeling. Porosity is updated after chemical calculations from the change of mineral volumes, then permeability change is calculated from the porosity change using an empirical permeability-porosity relation, most commonly the Carman-Kozeny relation <span class="citation">(Kozeny 1927; Carman 1956)</span>, or the <span class="citation">Verma and Pruess (1988)</span> relation. To the best of our knowledge, there are no closed-form relations available yet for the effects of chemical reactions on multi-phase flow properties, and thus currently these effects cannot be accounted for in reactive transport modeling.</p>
 <p>This paper presents new constitutive relations to represent how chemical reactions affect multi-phase flow properties on the continuum scale based on the conceptual model of parallel capillary tubes. The parameters in our new relations are either pre-existing input in a multi-phase flow simulation (initial capillary pressure function), or intermediate modeling results (water saturation, changes in mineral volume). With those parameters the new relations can be implemented in an existing reactive transport simulator directly, without introducing new variables.</p>
 <p>The change of porosity, permeability, and multi-phase flow parameters due to mineral reactions in a porous medium can be caused by different mechanisms in different scenarios. For example, <span class="citation">K. Pruess and Müller (2009)</span> investigate permeability change due to salt precipitation in the context of CO<span class="math inline"><em></em><sub>2</sub></span> injection. The rational for this process is that during CO<span class="math inline"><em></em><sub>2</sub></span> injection, water evaporates into the CO<span class="math inline"><em></em><sub>2</sub></span> stream. Salinity starts to increase in the water and salt eventually precipitates out. <span class="citation">K. Pruess and Müller (2009)</span> discuss how this ’dry out’ will impact injectivity by modeling the permeability change due to salt precipitation. Reduction of permeability can also be a consequence of bacterial growth in a porous medium as a consequence of groundwater recharge, water treatment or disposal processes, enhanced oil recovery schemes, or in-situ bioremediation of organic contaminants in groundwater <span class="citation">(Taylor and Jaffé 1990; Ginn et al. 2002; <span class="citeproc-not-found" data-reference-id="schafer1998simulation"><strong>???</strong></span>)</span>. Plugging can be particularly severe for water injection and bioremediation projects, since both processes inject water containing relatively high levels of growth substrate and inorganic nutrients.</p>
 <p>Mineral dissolution occurs where acid reacts with the surfaces of a porous medium. A common method of stimulating oil wells to achieve greater production is to inject acid into an oil bearing formation with the hope of significantly increasing the permeability in some region around the wellbore. The reacting acid will dissolve a portion of the porous solid thus changing the pore structure. The extent to which this dissolution of solid enhances permeability of the reservoir is essential to the design of an effective acid treatment <span class="citation">(Schechter and Gidley 1969; Hiorth, Cathles, and Madland 2010)</span>.</p>
@@ -208,6 +208,9 @@ article: http://ogp.me/ns/article#
 <div id="ref-hiorth2010impact">
 <p>Hiorth, A, LM Cathles, and MV Madland. 2010. “The Impact of Pore Water Chemistry on Carbonate Surface Charge and Oil Wettability.” <em>Transport in Porous Media</em> 85 (1). Springer: 1–21.</p>
 </div>
+<div id="ref-kozeny1927uber">
+<p>Kozeny, Josef. 1927. <em>Über Kapillare Leitung Des Wassers Im Boden:(Aufstieg, Versickerung Und Anwendung Auf Die Bewässerung)</em>. Hölder-Pichler-Tempsky.</p>
+</div>
 <div id="ref-larson1981percolation">
 <p>Larson, RG, LE Scriven, and HT Davis. 1981. “Percolation Theory of Two Phase Flow in Porous Media.” <em>Chemical Engineering Science</em> 36 (1). Elsevier: 57–73.</p>
 </div>
@@ -275,7 +278,7 @@ article: http://ogp.me/ns/article#
                     <time class="timeago" datetime="2017-03-25T00:00:00-05:00">2017-03-25 00:00</time>
 </div>
                 <div class="stats">
-                                <a href="posts/zhang2016clogging.html#disqus_thread" data-disqus-identifier="cache\posts\zhang2016clogging.html">Comments</a>
+                                <a href="posts/zhang2016clogging.html#disqus_thread" data-disqus-identifier="cache/posts/zhang2016clogging.html">Comments</a>
 
 
                 </div>
@@ -548,7 +551,7 @@ article: http://ogp.me/ns/article#
                     <time class="timeago" datetime="2017-03-24T00:00:00-05:00">2017-03-24 00:00</time>
 </div>
                 <div class="stats">
-                                <a href="posts/mitnick2017Sr.html#disqus_thread" data-disqus-identifier="cache\posts\mitnick2017Sr.html">Comments</a>
+                                <a href="posts/mitnick2017Sr.html#disqus_thread" data-disqus-identifier="cache/posts/mitnick2017Sr.html">Comments</a>
 
 
                 </div>
@@ -572,11 +575,11 @@ article: http://ogp.me/ns/article#
  .. type: text
  -->
 <h2 id="methods">Methods</h2>
-<p>In ocean drilling sites where calcite dissolution rate and precipitation rate are almost equal (<span class="math inline"><em>R</em><sub><em>p</em></sub> = <em>R</em><sub><em>d</em></sub></span>), the recrystallization rate <span class="math inline"><em>R</em></span> can be defined as <span class="math inline"><em>R</em> = <em>R</em><sub><em>p</em></sub> = <em>R</em><sub><em>d</em></sub></span>. In such cases, Ca concentration cannot be used to calculate the recrystallization rates since the Ca concentration is affected only by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. We use Sr concentration to infer the recrystallization which has been proven successful in <span class="citation">(<span class="citeproc-not-found" data-reference-id="fantle2007isotopes"><strong>???</strong></span>)</span>.</p>
+<p>In ocean drilling sites where calcite dissolution rate and precipitation rate are almost equal (<span class="math inline"><em>R</em><sub><em>p</em></sub> = <em>R</em><sub><em>d</em></sub></span>), the recrystallization rate <span class="math inline"><em>R</em></span> can be defined as <span class="math inline"><em>R</em> = <em>R</em><sub><em>p</em></sub> = <em>R</em><sub><em>d</em></sub></span>. In such cases, Ca concentration cannot be used to calculate the recrystallization rates since the Ca concentration is affected only by the net precipitation rate, which is close to zero in these cases. Trace elements or isotopes, however, are not in equilibrium between the pore fluid and the solid. Their concentrations can therefore provide information on the exchange rate of calcite dissolution and precipitation. We use Sr concentration to infer the recrystallization which has been proven successful in <span class="citation">Fantle and DePaolo (2007)</span>.</p>
 <p>The evolution of Sr concentration in the pore fluid (<span class="math inline"><em>C</em><sub><em>f</em></sub></span>) can be describe by the equation: <br><span class="math display">$$
 \dfrac{\partial C_f}{\partial t}=D \dfrac{\partial ^2 C_f}{\partial z^2}-v\dfrac{\partial C_f}{\partial z}+f_cRM(C_s-KC_f),
 $$</span><br> where <span class="math inline"><em>M</em> = <em>ρ</em><sub><em>s</em></sub>(1 − <em>ϕ</em>)/(<em>ρ</em><sub><em>f</em></sub><em>ϕ</em>)</span>, <span class="math inline"><em>K</em></span> is the equilibrium distribution coefficient of Sr between the solid and the fluid, and <span class="math inline"><em>f</em><sub><em>c</em></sub></span> is the fraction of calcite in the solid. <span class="math inline"><em>z</em> = 0</span> is defined as the interface between sea water and the sediment, and <span class="math inline"><em>z</em></span> is positive in the downward direction.</p>
-<p>We assume that porosity, fluid density, solid density, the distribution coefficient <span class="math inline"><em>K</em></span>, Sr concentration in the solid <span class="math inline"><em>C</em><sub><em>s</em></sub></span>, and the recrystallization rate <span class="math inline"><em>R</em></span> are all constants with depth. The value of M is close to 1.1 assuming that <span class="math inline"><em>ϕ</em> = 0.7</span>. <span class="math inline"><em>K</em></span> is close to 20, and <span class="math inline"><em>D</em></span> is close to 7500 <span class="math inline"><em>m</em><sup>2</sup>/<em>M</em><em>y</em><em>r</em></span> <span class="citation">(<span class="citeproc-not-found" data-reference-id="fantle2007isotopes"><strong>???</strong></span>)</span>.</p>
+<p>We assume that porosity, fluid density, solid density, the distribution coefficient <span class="math inline"><em>K</em></span>, Sr concentration in the solid <span class="math inline"><em>C</em><sub><em>s</em></sub></span>, and the recrystallization rate <span class="math inline"><em>R</em></span> are all constants with depth. The value of M is close to 1.1 assuming that <span class="math inline"><em>ϕ</em> = 0.7</span>. <span class="math inline"><em>K</em></span> is close to 20, and <span class="math inline"><em>D</em></span> is close to 7500 <span class="math inline"><em>m</em><sup>2</sup>/<em>M</em><em>y</em><em>r</em></span> <span class="citation">(Fantle and DePaolo 2007)</span>.</p>
 <p>We further assume that the Sr concentration is at steady state, so the term <span class="math inline">∂<em>C</em><sub><em>f</em></sub>/∂<em>t</em></span> is zero. The Sr concentration in pore fluid at the upper boundary is fixed at the modern seawater concentration (91 <span class="math inline"><em>μ</em><em>M</em></span>). Under these conditions, the solution for <span class="math inline"><em>C</em><sub><em>f</em></sub></span> is <br><span class="math display">$$
 C_f=\dfrac{C_s}{K}+(C_w-\dfrac{C_s}{K})e^{-z/L},
 $$</span><br> where <span class="math inline"><em>C</em><sub><em>w</em></sub> = 91<em>u</em><em>M</em></span>. The exponential factor is: <br><span class="math display">$$
@@ -747,7 +750,12 @@ $$</span><br> where <span class="math inline"><em>M</em> = 1.1, <em>K</em>
 <div class="figure">
 <img src="files/RecrysRateVsCalcite.png">
 </div>
-<h2 id="literature-cited">Literature Cited</h2>
+<h2 id="literature-cited" class="unnumbered">Literature Cited</h2>
+<div id="refs" class="references">
+<div id="ref-fantle2007isotopes">
+<p>Fantle, Matthew S, and Donald J DePaolo. 2007. “Ca Isotopes in Carbonate Sediment and Pore Fluid from Odp Site 807a: The ca 2+(aq)–calcite Equilibrium Fractionation Factor and Calcite Recrystallization Rates in Pleistocene Sediments.” <em>Geochimica et Cosmochimica Acta</em> 71 (10). Elsevier: 2524–46.</p>
+</div>
+</div>
             </div>
         </div>
     
