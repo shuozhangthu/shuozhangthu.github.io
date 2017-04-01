@@ -1,5 +1,8 @@
 output
 cache
 .doit.db
+.doit.db.dir
+.doit.db.dat
+.doit.db.bak
 conf.pyc
 *.ipynb_checkpoints
